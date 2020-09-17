@@ -1,0 +1,108 @@
+root{
+  --color-bg-green: #849d8f;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 27px;
+
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+
+  background-color: white;
+}
+
+html { box-sizing: border-box; }
+*, *::before, *::after {box-sizing: inherit;}
+
+/*
+header, footer { outline: 2px solid yellow; }
+nav { outline: 2px solid blue; }
+main { outline: 2px solid green; }
+article { outline: 2px solid green; }
+section { outline: 2px solid red; padding: 3px; }
+ul  { outline: 2px solid navy; }
+div  { outline: 2px solid lightgray; }
+*/
+
+.projects {
+  width: calc(100vw - 54px);
+}
+
+.projects section {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  border-bottom: 1px dashed lightgray;
+}
+
+.projects section .left {
+  margin-top: 7px;
+  margin-right: 50px;
+  width: 300px;
+  min-width: 300px;
+}
+.projects section .left p {
+  text-align: center;
+}
+.projects section .desc {
+  box-sizing: content-box;
+  overflow: auto;
+  padding-left: 5px;
+}
+.projects section .desc h2 {
+  margin-top: 0;
+  line-height: 1.2em;
+}
+.projects section .desc h2 svg {
+  position: relative;
+  top: 4px;
+}
+
+
+.projects section .desc .maket {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  margin: 16px 0;
+}
+.projects section .desc .maket img {
+  min-width: 250px;
+  max-width: 500px;
+  margin: 5px;
+  padding: 3px;
+  outline: 1px solid darkgray;
+}
+.projects section .desc .maket img:hover {
+  /*outline: 1px solid #607d8b;*/
+  box-shadow: 1px 1px 7px 0px darkgray;
+  cursor: pointer;
+}
+
+.projects summary {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.projects ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fa-file-pdf-o:before {
+  margin-right: 5px;
+}
