@@ -1,0 +1,55 @@
+/*! basis.css v1.0.3 | MIT License | avxodiar@gmail.com */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* общее правило для box-sizing с помощью "inherit" */
+html { box-sizing: border-box; }
+*, *::before, *::after {box-sizing: inherit;}
+
+/* для корректного отображения шрифта в полях ввода*/
+input[type=text], input[type=password] {
+  font: inherit;
+}
+
+/*псевдораспорка. устанавливается в родительский блок*/
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*визуально скрытое, с поддержкой скринридеров*/
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position:absolute;
+
+  width:1px;
+  height:1px;
+  margin:-1px;
+  border:0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip:rect(0 0 0 0);
+  overflow:hidden;
+}
+
+/*оверлей для модальных окон*/
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+}
