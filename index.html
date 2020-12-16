@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <title>Document</title>
+  <title>Портфолио</title>
   <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,11 +13,57 @@
 
     <section>
       <div class="left">
-        <img src="yeticave/logo.png" width="300" height="151" alt="Глейси">
-        <p>
-          <a href="yeticave/specification.pdf" target="_blank" class="fa fa-file-pdf-o">Спецификация</a>
+        <img src="projects/unique/logo.jpg" width="300" height="151" alt="Unique">
+        <!--p>
+          <a href="projects/unique/specification.pdf" target="_blank" class="fa fa-file-pdf-o">Спецификация</a>
           &nbsp;
-          <a href="yeticave/tz_yeticave.docx" target="_blank" class="fa fa-file-pdf-o">Тех.задание</a>
+          <a href="projects/unique/tz_yeticave.docx" target="_blank" class="fa fa-file-pdf-o">Тех.задание</a>
+        </p-->
+        </p>
+      </div>
+      <div class="desc">
+        <a href="https://github.com/Avxodiar/unique" target="_blank">
+          <h2>Учебный проект "Unique"
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+              <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
+            </svg>
+          </h2>
+        </a>
+        <p>Проект "Unique" это учебный проект на Laravel v.8 по созданию одностраничного сайта "landing page". Обычно такие сайты не предусматриваю наличие администраторской части (/admin), но с целью изучения встроенного механизма авторизации (через фасад Auth) и более полной работы с моделями данных (создание, обновление, удалени) дополнительно создана админ.часть.</p>
+        <p>Администраторская часть предусматривает создание, изменение и удаление большиства секций сайта, кроме раздела Клиенты и формы для связи "Контакты". Все операции реализуются с валидацией данных и учетом различных моделей базы данных представляющих данные секции.</p>
+        <p class="description">
+          <b>Используемые технологии:</b> PHP 7.3+, MySQL 5.7+, composer
+        </p>
+        <p class="description">
+          <b>Фреймворк</b>: Laravel 8
+        </p>
+        <p><b>Шаблоны:</b><br>
+          <ul>
+            <li>публичная часть - на базе готового шаблона от WebThemez.com</li>
+            <li>администраторская часть - самостоятельно, с использованием библиотеки Bootstrap v4.5</li>
+          </ul>
+            
+        </p>
+
+        <details>
+          <summary><i>Примечание</i>:</summary>
+          <p>
+            В связи с тем, в что в Laravel 8, службы аутентификации предоставляеются пакетам Jetstream и Fortify, админ.часть не предусматривает управление пользователями, кроме как регистрации, аутентификации и завершении сеанса, функционал которых создан самостоятельно. Также не предусмотрено управление ролями и доступом к различным секциям панели управления и правами на операции, в связи чем любой авторизованный пользователь имеет полный доступ к любым действиям, что в реальном проекте конечно не допустимо.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section>
+      <div class="left">
+        <img src="projects/yeticave/logo.png" width="300" height="151" alt="Глейси">
+        <p>
+          <a href="projects/yeticave/specification.pdf" target="_blank" class="fa fa-file-pdf-o">Спецификация</a>
+          &nbsp;
+          <a href="projects/yeticave/tz_yeticave.docx" target="_blank" class="fa fa-file-pdf-o">Тех.задание</a>
+          &nbsp;
+          <a href="projects/yeticave/tz_detail.pdf" target="_blank" class="fa fa-file-pdf-o">Детальное задание</a>
         </p>
         </p>
       </div>
@@ -31,23 +77,35 @@
           </h2>
         </a>
         <p>Интернет-аукцион «YetiCave» – это простой сервис, позволяющий пользователям продать свои личные вещи по максимально выгодной для них цене - на основе аукциона. Пользователь, предложивший максимальную цену получает вещь по этой стоимости.</p>
-        <p class="description">Выполнен в рамках интенсива HTML Academy
-         <nobr>«Профессиональный PHP, уровень 1».</nobr></p>
+        <p class="description">Выполнен в рамках интенсива <i>HTML Academy
+         <nobr>«Профессиональный PHP, уровень 1».</nobr></i></p>
         <p class="description">
-          Используемые технологии: PHP 5/7<br>
-          Фреймворки не используются - условие обучения<br>
+          <b>Используемые технологии:</b> PHP 7.2, MySQL 5.7, процедурный стиль c паттерном "Page Controller" + Composer с автозагрузкой и пакетом SwiftMailer для работы с почтой 
         </p>
-        <p>Макет: верстка не требуется</p>
+        <p class="description">
+          <b>Фреймворк</b>: не используются - условие обучения
+        </p>
+        <p><b>Макет:</b> верстка не требуется</p>
+
+        <details>
+          <summary><i>Примечания</i>:</summary>
+          <ol>
+            <li>В соответствии с ТЗ п.6, в корне проекта находится файл queries.sql со схемой БД и примерами запросов на выборку/изменение данных. Более логичным в корне хранить только файл со схемой создания БД и ее структурой, а дополнительное описание с примерами запросов к БД вынести в отдельный файл. А еще правильнее было бы использовать инсталятор (install.php или Makefile), но это уже совсем другая история...</li>
+            <li>В соответствии с ТЗ п.9.2, в файле index.php подключается скрипт getwinner.php, занимающийся определением ставок у завершенных лотов и рассылкой писем победителям.<br>
+            Правильнее было бы данный скрипт повесить на крон и удалить его вызов в index.php.
+            </li>
+          </ol>
+        </details>
       </div>
     </section>
 
     <section>
       <div class="left">
-        <img src="code-and-magic/logo.png" width="300" height="151" alt="Глейси">
+        <img src="projects/code-and-magic/logo.png" width="300" height="151" alt="Глейси">
         <p>
-          <a href="code-and-magic/specification.pdf" target="_blank" class="fa fa-file-pdf-o">Спецификация</a>
+          <a href="projects/code-and-magic/specification.pdf" target="_blank" class="fa fa-file-pdf-o">Спецификация</a>
           &nbsp;
-          <a href="code-and-magic/criteria.pdf" target="_blank" class="fa fa-file-pdf-o">Критерии</a>
+          <a href="projects/code-and-magic/criteria.pdf" target="_blank" class="fa fa-file-pdf-o">Критерии</a>
         </p>
         </p>
       </div>
@@ -61,26 +119,26 @@
           </h2>
         </a>
         <p>Демо-страница игры-платформера «Код и Магия», на которой можно поиграть в игру, а в специальном окне настроить внешний вид игрового персонажа, купить для него артефакты, которые помогают в игре и посмотреть на похожих персонажей других игроков.</p>
-        <p class="description">Выполнен в рамках базового интенсива HTML Academy
-         <nobr>«Профессиональный Javascript, уровень 1».</nobr></p>
+        <p class="description">Выполнен в рамках базового интенсива <i>HTML Academy
+         <nobr>«Профессиональный Javascript, уровень 1».</nobr></i></p>
         <p class="description">
-          Используемые технологии: нативный JavaScript<br>
+          <b>Используемые технологии:</b> нативный JavaScript<br>
         </p>
-        <p>Макет: верстка не требуется</p>
+        <p><b>Макет:</b> верстка не требуется</p>
       </div>
     </section>
 
     <section>
       <div class="left">
-        <img src="gllacy/logo.jpg" width="300" height="151" alt="Глейси">
+        <img src="projects/gllacy/logo.jpg" width="300" height="151" alt="Глейси">
         <p>
-          <a href="gllacy/specification.pdf" target="_blank" class="fa fa-file-pdf-o">Спецификация</a>
+          <a href="projects/gllacy/specification.pdf" target="_blank" class="fa fa-file-pdf-o">Спецификация</a>
           &nbsp;
-          <a href="gllacy/criteria.pdf" target="_blank" class="fa fa-file-pdf-o">Критерии</a>
+          <a href="projects/gllacy/criteria.pdf" target="_blank" class="fa fa-file-pdf-o">Критерии</a>
         </p>
       </div>
       <div class="desc">
-        <a href="https://avxodiar.github.io/Gllacy/" target="_blank">
+        <a href="https://avxodiar.github.io/gllacy/" target="_blank">
           <h2>Личный проект «Глейси»
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
@@ -88,21 +146,21 @@
             </svg>
           </h2>
         </a>
-        <p class="description">Выполнен в рамках базового интенсива HTML Academy
-         <nobr>«Профессиональный HTML и CSS, уровень 1».</nobr></p>
+        <p class="description">Выполнен в рамках базового интенсива <i>HTML Academy
+         <nobr>«Профессиональный HTML и CSS, уровень 1».</nobr></i></p>
          <p class="description">
           Используемые технологии: HTML5 / CSS3 / нативный JavaScript<br>
           Фиксированная вёрстка, прогрессивное улучшение
         </p>
         <details>
-          <summary>Макет</summary>
+          <summary><b>Макет</b></summary>
           <figure class="maket">
-            <img src="gllacy/gllacy-index-1200.jpg" width="250" height="503" alt="Макет Глейси 1200 - главная страница">
-            <img src="gllacy/gllacy-index-900.jpg" width="250" height="675" alt="Макет Глейси 900 - главная страница">
-            <img src="gllacy/gllacy-catalog-1200.jpg" width="250" height="344" alt="Макет Глейси 1200 - страница каталога">
-            <img src="gllacy/gllacy-catalog-900.jpg" width="250" height="413" alt="Макет Глейси 900 - страница каталога">
-            <img src="gllacy/gllacy-catalog-900-item.jpg" width="250" height="413" alt="Макет Глейси 900 - страница каталога с товаром в фокусе">
-            <img src="gllacy/gllacy-styleguide.jpg" width="250" height="476" alt="Макет Глейси - стилизация элементов">
+            <img src="projects/gllacy/gllacy-index-1200.jpg" width="250" height="503" alt="Макет Глейси 1200 - главная страница">
+            <img src="projects/gllacy/gllacy-index-900.jpg" width="250" height="675" alt="Макет Глейси 900 - главная страница">
+            <img src="projects/gllacy/gllacy-catalog-1200.jpg" width="250" height="344" alt="Макет Глейси 1200 - страница каталога">
+            <img src="projects/gllacy/gllacy-catalog-900.jpg" width="250" height="413" alt="Макет Глейси 900 - страница каталога">
+            <img src="projects/gllacy/gllacy-catalog-900-item.jpg" width="250" height="413" alt="Макет Глейси 900 - страница каталога с товаром в фокусе">
+            <img src="projects/gllacy/gllacy-styleguide.jpg" width="250" height="476" alt="Макет Глейси - стилизация элементов">
           </figure>
         </details>
       </div>
@@ -110,11 +168,11 @@
 
     <section>
       <div class="left">
-        <img src="barbershop/logo.png" width="300" height="151" alt="Барбершоп Бородинский">
+        <img src="projects/barbershop/logo.png" width="300" height="151" alt="Барбершоп Бородинский">
         <p>
-          <a href="barbershop/specification.pdf" target="_blank" class="fa fa-file-pdf-o">Спецификация</a>
+          <a href="projects/barbershop/specification.pdf" target="_blank" class="fa fa-file-pdf-o">Спецификация</a>
           &nbsp;
-          <a href="barbershop/criteria.pdf" target="_blank" class="fa fa-file-pdf-o">Критерии</a>
+          <a href="projects/barbershop/criteria.pdf" target="_blank" class="fa fa-file-pdf-o">Критерии</a>
         </p>
       </div>
       <div class="desc">
@@ -126,20 +184,20 @@
             </svg></a>
           </h2>
         
-        <p class="description">Выполнен в рамках базового интенсива HTML Academy
-          <nobr>«Профессиональный HTML и CSS, уровень 1».</nobr></p>
+        <p class="description">Выполнен в рамках базового интенсива <i>HTML Academy
+          <nobr>«Профессиональный HTML и CSS, уровень 1».</nobr></i></p>
         <p class="description">
           Используемые технологии: HTML5 / CSS3 / нативный JavaScript<br>
           Фиксированная вёрстка, прогрессивное улучшение
         </p>
         <p>
         <details>
-          <summary>Макет</summary>
+          <summary><b>Макет</b></summary>
           <figure class="maket">
-            <img src="barbershop/barbershop-index.jpg" width="250" height="172" alt="Макет Барбершопа - главная страница">
-            <img src="barbershop/barbershop-shop.jpg" width="250" height="244" alt="Макет Барбершопа - страница каталога">
-            <img src="barbershop/barbershop-price.jpg" width="250" height="221" alt="Макет Барбершопа - страница цен">
-            <img src="barbershop/barbershop-item.jpg" width="250" height="242" alt="Макет Барбершопа - страница товара">
+            <img src="projects/barbershop/barbershop-index.jpg" width="250" height="172" alt="Макет Барбершопа - главная страница">
+            <img src="projects/barbershop/barbershop-shop.jpg" width="250" height="244" alt="Макет Барбершопа - страница каталога">
+            <img src="projects/barbershop/barbershop-price.jpg" width="250" height="221" alt="Макет Барбершопа - страница цен">
+            <img src="projects/barbershop/barbershop-item.jpg" width="250" height="242" alt="Макет Барбершопа - страница товара">
           </figure>
         </details>
       </div>
