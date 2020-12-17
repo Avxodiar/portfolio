@@ -56,7 +56,7 @@ body {
 h2 {
   position: relative;
   margin-top: 50px;
-  font-size: 25px;
+  font-size: 2em;
   text-align: left;
   border-bottom: 2px solid var(--main-header-border);
 }
@@ -67,6 +67,21 @@ h2.fun span{
   font-size: 0.5em;
   color: var(--main-header-fun);
   bottom: 0;
+}
+
+
+.d-flex {
+  display: flex;
+}
+.f-align-center {
+  align-items: center;
+}
+
+.mr-2 {
+  margin-right: 2em;
+}
+.ml-2 {
+  margin-left: 2em;
 }
 
 /* --- Ссылки на соц.сети и сервисы --- */
@@ -257,6 +272,55 @@ main {
   flex-grow: 1;
 }
 
+main section {
+  margin-bottom: 5em;
+}
+
+.list ul {
+  margin: 0;
+}
+
+.list > li {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  list-style: none;
+  border-bottom: 1px dashed lightgray;
+}
+.list > li:last-child {
+  border-bottom: none; 
+}
+
+.icon {
+  width: 5em;
+}
+.icon i {
+  position: relative;
+}
+.icon .fa-home,
+.icon .fa-laptop {
+  position: relative;
+}
+.icon .fa-home:before {
+  content: "\f015";
+  font-size: 2.7em;
+  color: gainsboro;
+}
+.icon .fa-laptop:before {
+  content: "\f109";
+  font-size: 2.4em;
+  color: darkorange;
+  position: absolute;
+  bottom: -16px;
+  left: -36px;
+}
+
+.qsoft-log li {
+  margin-bottom: 1em;
+}
+.qsoft-log time {
+  font-weight: 500;
+  display: block;
+}
 
 
 footer {
@@ -282,7 +346,7 @@ footer .container li a {
   justify-content: space-around;
   flex-direction: column;
   text-align: center;
-  text-decoration: none;
+  text-decoratio*n: none;
 }
 footer .container li i {
   font-size: 2em;
