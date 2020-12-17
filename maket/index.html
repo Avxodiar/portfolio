@@ -72,16 +72,38 @@
       font-size: 1.5em;
     }
 
-    .header .name a {
-      padding-left: 0.5em;
-      font-size: 1em;
-      color: #455A64;
-    }
-    
     .header .name ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
       list-style: none;
       padding: 0;
+      margin: 0;
+      font-size: 1.1em;
     }
+    .header .name li {
+      padding: 0.3em 1em 0.3em 0;
+    }
+    .header .name a {
+      /*padding-left: 0.5em;
+      font-size: 1em;
+      color: #455A64;*/
+      text-decoration: none;
+    }
+    .header .name a i {
+      margin-right: 0.5em;
+    }
+    .header .name li:last-child .github {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .header .name li:last-child .github i {
+      font-size: 2em;
+      margin: 0;
+    }
+    
 
 
 
@@ -187,16 +209,65 @@
 
    
     footer {
-      border-top: 1px solid #37474F;
-      background-color: #546E7A;
+      margin-top: 5em;
+      box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.16), 0 -2px 10px 0 rgba(0, 0, 0, 0.12);
     }
     footer .container {
       display: flex;
       justify-content: space-between;
     }
-    footer .container ul {
-      display: flex; 
+    footer .container nav {
+      flex-grow: 1;
     }
+    footer .container ul {
+      display: flex;
+      justify-content: space-around;
+      margin: 1em 0;
+      padding: 0;
+      list-style: none;
+    }
+    footer .container li a {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      /*color: #999;*/
+      text-align: center;
+      text-decoration: none;
+    }
+    footer .container li i {
+      font-size: 2em;
+      margin: 0 0 0.3em;
+    }
+
+    .contacts li a {
+      filter: grayscale(90%);
+    }
+    .contacts li a:hover {
+      filter: grayscale(0);
+    }
+
+    li a.gmail {
+      color: #ea4335;
+    }
+    li a.phone {
+      color: #31d059;
+    }
+    li a.telegram {
+     color: #24a2e0;
+    }
+    li a.skype {
+      color: #00b0ef;
+    }
+    li a.linkedin {
+      color: #0a66c2;
+    }
+    li a.github {
+      color: #161b22;
+    }
+    li a.github:hover {
+      color: #416487;
+    }
+
 
   </style>
 
@@ -246,24 +317,46 @@
         <div class="name">
           <h1>Харитов Андрей</h1>
           <h4>PHP Программист</h4>
-          <ul>
-            <li>
-              <i class="fa fa-envelope"></i>
-              <a href="mailto:avxodiar@gmail.com">avxodiar@gmail.com</a>
+
+          <ul class="contacts">
+            <div>
+              <li>
+                <a class="telegram" href="tg://resolve?domain=convergent">
+                  <i class="fa fa-telegram" aria-hidden="true"></i>
+                  Telegram
+                </a>
+              </li>
+              <li>
+                <a class="gmail" href="mailto:avxodiar@gmail.com">
+                  <i class="fa fa-envelope"></i>
+                  @Gmail
+                </a>
+              </li>
+            </div>
+            <div>
+              <li>
+                <a class="skype" href="skype:live:.cid.94ad1db13e9980e2">
+                  <i class="fa fa-skype"></i>
+                  Skype
+                </a>
+              </li>          
+              <li>
+                <a class="linkedin" href="https://www.linkedin.com/in/avxodiar">
+                  <i class="fa fa-linkedin-square"></i>
+                  LinkedIn
+                </a>
+              </li>
+            </div>
+            <div>
+              <li>
+                <a class="github" href="https://github.com/Avxodiar">
+                  <i class="fa fa-github"></i>
+                  GitHub
+                </a>
             </li>
-            <li>
-              <i class="fa fa-phone"></i>
-              <a href="tel:+79670184726">+7(967)018-47-26</a>
-            </li>
-            <li>
-              <i class="fa fa-github"></i>
-              <a href="callto:">GitHub</a>
-            </li>
-            <li>
-              <i class="fa fa-linkedin-square"></i>
-              <a href="callto:">LinkedIn</a>
-            </li>
+            </div>
           </ul>
+
         </div>
       </div>
     </div>
@@ -286,7 +379,6 @@
           <b><i>Примечание для HR</i></b>: я НЕ заинтересован в любых! предложениях связанных с 1С:Битрикс.<br>
           Такие предложения будут игнорироваться. Пожалуйста, не тратьте ни своё, ни моё время.
         </p> -->
-        <a href="#top">&uarr;</a>
       </section>
 
       <section id="skills">
@@ -296,13 +388,12 @@
           <li>Git (ранее Svn), Composer</li>
           <li>HTML5, CSS3, Bootstrap, Blade, Сементическая верстка</li>
           <li>JavaScript, jQuery</li>
-          <li>Unix (Fedora, Ubuntu, Debian) / CLI</li>
+          <li>Unix (Fedora, Ubuntu, Debian) / Bash / CLI</li>
           <li>CMS: Bitrix 6.x/9.x, Joomla 1.x/3,x</li>
           <li>Софт: PhpStorm, Sublime, SqlWorkbench, Meld, Postman </li>
           <li>Софт для Win: WinSCP, Putty, OpenServer, Cmder, HeidiSql, Notepad++</li>
           <li>Английский язык: Уровень Elementary / Pre–Intermediate (A2)</li>
         </ul>
-        <a href="#top">&uarr;</a>
       </section>
 
       <section id="projects">
@@ -312,8 +403,8 @@
           <ul>
             <li>HTML / CSS / JS<br>
               <a href="https://github.com/Avxodiar/unique">
-                Одностраничный (Landing page) сайт "Портфолио" (этот сайт)
-              </a>
+                Одностраничный (Landing page) сайт "Портфолио"
+              </a> (этот сайт)
             </li>
             <li>Laravel / Bootstrap<br>
               <a href="https://github.com/Avxodiar/unique">
@@ -352,7 +443,7 @@
         <div>
           <label>2012-2017 (1С:Bitrix)</label>
           <ul>
-            <li> рабочий проект: <a href="#QSOFT">магазин МТС</a></li>
+            <li> рабочий проект: <a href="http://shop.mts.ru/">магазин МТС</a></li>
           </ul>
         </div>
 
@@ -378,8 +469,6 @@
             </li>
           </ul>
         </div>
-
-        <a href="#top">&uarr;</a>
       </section>
 
       <section id="expirience">
@@ -401,26 +490,26 @@
             ООО "Супермаркет" / гипермаркет "Позитроника" (г. Пенза)<br>
              - инженер по сборке и ремонту ПК
            </li>
-          <li>2005-2009<br>
-            ООО "Супермаркет" / комп.магазин "Орион" (г. Пенза)<br>
-            - инженер по сборке и ремонту ПК
-          </li>
         </ul>
-        <a href="#top">&uarr;</a>
       </section>
 
       <section id="education">
         <h2 class="fun">Образование <span>SHOW TABLES\G</span></h2>
         <ul>
-          <li>2020<br>
-              <b class="courses-logo logo-hexlet">Hexlet</b>, общедоступные курсы<br>
-              <a href="https://ru.hexlet.io/u/avxodiar" target="_blank">профиль</a>
-               /
-              <a href="https://ru.hexlet.io/u/avxodiar/courses" target="_blank">список курсов</a>
+          <li>
+            2018-2020<br>
+
+            <a href="https://ru.hexlet.io/u/avxodiar/courses" target="_blank">
+              <b class="courses-logo logo-hexlet">Hexlet</b>
+            </a>, общедоступные курсы
           </li>
-          <li>2019-2020<br>
-            <b class="courses-logo logo-sololearn">SoloLearn</b><br>
-            <a href="https://www.sololearn.com/Profile/16609287/" target="_blank">профиль</a><br>
+
+          <li>
+            2019-2020<br>
+
+            <a href="https://www.sololearn.com/Profile/16609287/" target="_blank">
+              <b class="courses-logo logo-sololearn">SoloLearn</b>
+            </a><br>
             PHP - https://www.sololearn.com/Certificate/1059-16609287/pdf/<br>
             SQL - https://www.sololearn.com/Certificate/1060-16609287/pdf/<br>
             HTML - https://www.sololearn.com/Certificate/1014-16609287/pdf/<br>
@@ -429,22 +518,23 @@
             JS - https://www.sololearn.com/Certificate/-16609287/pdf/<br>
             jQuery - https://www.sololearn.com/Certificate/-16609287/pdf/<br>
           </li>
+
           <li>2018-2019<br>
-              <b class="courses-logo logo-htmlacademy">HtmlAcademy</b>, общедоступные курсы<br>
-              <a href="https://htmlacademy.ru/profile/id14311/" target="_blank">профиль</a>
-               /
-              <a href="https://htmlacademy.ru/profile/id14311/progress" target="_blank">список курсов</a>
+              <a href="https://htmlacademy.ru/profile/id14311/progress" target="_blank">
+                <b class="courses-logo logo-htmlacademy">HtmlAcademy</b>
+              </a>, общедоступные курсы
           </li>
+
           <li>2012 - 2017<br>
             <b class="courses-logo logo-bitrix" target="_blank">1C:Битрикс</b><br>
             Сертификаты Битрикс
           </li>
+
           <li>1997-2002<br>
             <b class="courses-logo logo-pgtu">ПГТУ (г. Пенза)</b><br>
-            специальность "Инженер-системотехник"
+              специальность "Инженер-системотехник"
           </li>
         </ul>
-        <a href="#top">&uarr;</a>
       </section>
 
     </div>
@@ -452,13 +542,53 @@
 
   <footer>
     <div class="container">
-      <p>(c)2020 AVXODIAR</p>
       <nav>
         <h3 class="visually-hidden">Ссылки</h3>
-        <ul>
-          <li>Github</li>
-          <li>Linkedin</li>
+        <ul class="contacts">
+          <li>
+            <a class="telegram" href="tg://resolve?domain=convergent">
+              <i class="fa fa-telegram" aria-hidden="true"></i>
+              Telegram
+            </a>
+          </li>
+          <li>
+            <a class="gmail" href="mailto:avxodiar@gmail.com">
+              <i class="fa fa-envelope"></i>
+              @Gmail
+            </a>
+          </li>
+          <!--li>
+            <a class="phone" href="tel:+1234567890">
+              <i class="fa fa-phone-square"></i>
+              +7(123)456-78-90
+            </a>
+          </li-->
+          <li>
+            <a class="skype" href="skype:live:.cid.94ad1db13e9980e2?chat">
+              <i class="fa fa-skype"></i>
+              Skype1
+            </a>
+          </li>
+          <li>
+            <a class="skype" href="skype:.cid.94ad1db13e9980e2">
+              <i class="fa fa-skype"></i>
+              Skype2
+            </a>
+          </li>
+          <li>
+            <a class="linkedin" href="https://www.linkedin.com/in/avxodiar">
+              <i class="fa fa-linkedin-square"></i>
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a class="github" href="https://github.com/Avxodiar">
+              <i class="fa fa-github"></i>
+              GitHub
+            </a>
+          </li>
         </ul>
+
       </nav>
     </div>
   </footer>
