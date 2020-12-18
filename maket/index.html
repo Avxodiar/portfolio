@@ -247,108 +247,130 @@
       </section>
 
       <section id="expirience">
-        <h2 class="fun">Опыт работы<span>git log --pretty=format:"%ad%n%s%d" --date=short</span></h2>
+        <h2 class="fun">Опыт работы<span>git log --pretty=format:"%ad %an %s %d" --date=short</span></h2>
 
         <ul class="list">
           <li>
             <div class="d-flex f-align-center">
-              <p><b>2018 - 2020</b><br>
+              <p class="date"><b>2018 - 2020</b><br>
                   (г. Москва)
                 </p>
-              <div class="icon ml-2">
+              <div class="logo icon mx-2">
                 <i class="fa fa-home" aria-hidden="true"></i>
                 <i class="fa fa-laptop" aria-hidden="true"></i>  
                 <!-- desktop -->
                 <!-- <img src="img/working-at-home.svg" width="249px" alt="фриланс"><br> -->
               </div>
+              <p>
+                Фриланс<br>
+                <a class="link" href="#projects">Персональные web-проекты</a></p>
             </div>
-            <p>Фриланс / <a href="#projects">Персональные web-проекты</a></p>
           </li>
 
           <li>
             <div class="d-flex f-align-center">
-              <p><b>2012 - 2017</b><br>
+              <p class="date"><b>2012 - 2017</b><br>
                 (г. Москва)
               </p>
-              <img class="ml-2" src="img/qsoft.svg" width="249px" alt="QSOFT">
+              <div class="logo mx-2">
+                <img src="img/qsoft.svg" width="249px" alt="QSOFT">  
+              </div>
+              <p>
+                Главный програмист<br>
+                <a class="external-link" href="https://qsoft.ru/project/563/" target="_blank">Отдела тех.поддержки и<br> развития проекта <b>МТС</b></a></p>
             </div>
-            <p>Главный програмист <a href="https://qsoft.ru/project/563/">Отдела тех.поддержки и развития проекта <b>МТС</b></a></p>
           </li>
 
           <li>
             <div class="d-flex f-align-center">
-              <p><b>2005-2011</b><br>
+              <p class="date"><b>2005-2011</b><br>
                 (г. Пенза)
               </p>
-              <img class="ml-2" src="img/positronica.jpg" width="288px" height="48px" alt="Позитроника">
+              <div class="logo mx-2">
+                <img src="img/positronica.jpg" width="288px" height="48px" alt="Позитроника">
+              </div>
+              <p>
+                Инженер по сборке и ремонту ПК<br>
+                гипермаркет "Позитроника"
+                <br>(ООО "Супермаркет")
+              </p>
             </div>
-             Инженер по сборке и ремонту ПК гипермаркета "Позитроника" /  ООО "Супермаркет".
            </li>
         </ul>
       </section>
 
       <section id="education">
-        <h2 class="fun">Образование / Обучение <span>SHOW TABLES\G</span></h2>
+        <h2 class="fun">Образование <span>SELECT `logo`,`time`,`describe` FROM `educations` ORDER BY `data` DESC\G</span></h2>
         <ul class="list">
 
           <li class="d-flex f-align-center">
-            <a class="mr-2" href="https://www.sololearn.com/Profile/16609287/" target="_blank">
+            <a class="logo" href="https://www.sololearn.com/Profile/16609287/" target="_blank">
               <!-- <b class="courses-logo logo-sololearn">SoloLearn</b> -->
-              <img src="img/sololearn.svg" alt="SoloLearn">
+              <img src="img/sololearn.svg" width="250px" alt="SoloLearn">
             </a>
-            <div>
+            <div class="mr-2">
               <b>2019 - 2020</b><br>
+              онлайн курсы
+            </div>
+            <div>
               Сертификаты:
               <div class="d-flex f-jc-between">
-                
-                <a class="mr-2" href="https://www.sololearn.com/Certificate/1059-16609287/pdf/">PHP</a><br>
-                <a class="mr-2" href="https://www.sololearn.com/Certificate/1060-16609287/pdf/">SQL</a><br>
-                <a class="mr-2" href="https://www.sololearn.com/Certificate/1014-16609287/pdf/">HTML</a><br>
-                <a href="https://www.sololearn.com/Certificate/1023-16609287/pdf/">CSS</a><br>
+                <a class="mr-1 external-link" href="https://www.sololearn.com/Certificate/1059-16609287/pdf/" target="_blank">PHP</a>
+                <a class="mr-1 external-link" href="https://www.sololearn.com/Certificate/1060-16609287/pdf/" target="_blank">SQL</a>
+                <a class="mr-1 external-link" href="https://www.sololearn.com/Certificate/1014-16609287/pdf/" target="_blank">HTML</a>
+                <a class="mr-1 external-link" href="https://www.sololearn.com/Certificate/1023-16609287/pdf/" target="_blank">CSS</a>
+                <div class="hidden">
+                  JS - https://www.sololearn.com/Certificate/-16609287/pdf/<br>
+                  jQuery - https://www.sololearn.com/Certificate/-16609287/pdf/
                 </div>
-              <div class="visually-hidden">
-                JS - https://www.sololearn.com/Certificate/-16609287/pdf/<br>
-                jQuery - https://www.sololearn.com/Certificate/-16609287/pdf/
               </div>
             </div>
           </li>
-          
+
           <!-- <div class="d-flex f-jc-between"> -->
             <li class="d-flex f-align-center">
-              <a class="mr-2" href="https://ru.hexlet.io/u/avxodiar/" target="_blank">
+              <a class="logo" href="https://ru.hexlet.io/u/avxodiar/" target="_blank">
                 <!-- <b class="courses-logo logo-hexlet">Hexlet</b> -->
                 <img src="img/hexlet.jpg" width="154px" alt="Hexlet">
               </a>
               <p><b>2018 - 2020</b><br>
-                  <a href="https://ru.hexlet.io/u/avxodiar/courses" target="_blank">общедоступные курсы: Html, Css, Php, Git</a>
+                  <a class="external-link" href="https://ru.hexlet.io/u/avxodiar/courses" target="_blank">общедоступные курсы: Html, Css, Php, Git</a>
               </p>
             </li>
 
             <li class="d-flex f-align-center">
-              <a class="mr-2" href="https://htmlacademy.ru/profile/id14311/" target="_blank">
+              <a class="logo" href="https://htmlacademy.ru/profile/id14311/" target="_blank">
                 <!-- <b class="courses-logo logo-htmlacademy">HtmlAcademy</b> -->
                 <img src="img/htmlacademy.svg" alt="HtmlAcademy">
               </a>
               <p><b>2018 - 2019</b><br>
-                 <a href="https://htmlacademy.ru/profile/id14311/progress" target="_blank">общедоступные курсы: Html, Css</a>
+                 <a class="external-link" href="https://htmlacademy.ru/profile/id14311/progress" target="_blank">общедоступные курсы: Html, Css</a>
               </p>
             </li>
           <!-- </div> -->
 
 
           <li class="d-flex f-align-center">
-            <img class="mr-2" src="img/1c-bitrix.svg" width="246px" alt="1C:Битрикс">
+            <div class="logo">
+              <img src="img/1c-bitrix.svg" width="246px" alt="1C:Битрикс">
+            </div>
             <p class="mr-2">
               <b>2012 - 2017</b><br>
               Фреймворк 1С:Bitrix
             </p>
-            <p>Сертификаты:<br>
-                BX-DEV001, BXS-CM
-            </p>
+            <div>
+              Сертификаты:
+              <div class="d-flex f-jc-between">
+                <a class="mr-1 link" href="img/certificates/bitrix_BXS-CM.pdf" target="_blank">BXS-CM</a>
+                <a class="mr-1 link" href="img/certificates/bitrix_BX-DEV001.pdf" target="_blank">BX-DEV001</a>
+              </div>
+            </div>
           </li>
 
           <li class="d-flex f-align-center">
-            <img class="mr-2" src="img/politeh.jpg" width="100px" alt="ПГТУ">
+            <div class="logo">
+              <img class="mr-2" src="img/politeh.jpg" width="100px" alt="ПГТУ">
+            </div>
             <p>
               <b>1997 - 2002</b><br>
               <b>ПГТУ (г. Пенза)</b><br>

@@ -22,14 +22,15 @@
 
   /*main*/
   --main-header-border: #e3e3e3;
-  --main-header-fun: darkgray;
+  --main-header-fun: lightgray;
+  /*--main-header-fun: darkgray;*/
   
   /* dark */
   --light-gray: #c9c9c9;
-  --blue-gray: #607D8B;
-  --blue-darkgray: #455A64;
-  --blue-darkgray2: #546E7A;
-  --navy-darkgray: #37474F;
+  --light-bluegray: #607D8B;
+  --bluegray: #546E7A;
+  --dark-bluegray: #455A64;
+  --dark-navygray: #37474F;
   /* sizes */
   --main-width: 960px;
 }
@@ -39,14 +40,14 @@
 }
 
 body {
-  min-width: 960px;
+  min-width: var(--main-width);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
 
   color: var(--main-color);
-  font-size: 18px;
+  font-size: 1.2em;
   font-family: "Roboto", "monospace";
   line-height: 1.5;
   background-color: var(--bg-white);
@@ -55,7 +56,7 @@ body {
 
 h2 {
   position: relative;
-  margin-top: 50px;
+  margin: 2em 0;
   font-size: 2em;
   text-align: left;
   border-bottom: 2px solid var(--main-header-border);
@@ -66,10 +67,12 @@ h2.fun span{
   right: 0;
   font-size: 0.5em;
   color: var(--main-header-fun);
-  bottom: 0;
+  bottom: -2em;
 }
 
-
+.hidden {
+  display: none;
+}
 .d-flex {
   display: flex;
 }
@@ -83,6 +86,20 @@ h2.fun span{
   flex-grow: 1;
 }
 
+.mx-1 {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.mx-2 {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.mr-1 {
+  margin-right: 1em;
+}
+.ml-1 {
+  margin-left: 1em;
+}
 .mr-2 {
   margin-right: 2em;
 }
@@ -282,6 +299,30 @@ main section {
   margin-bottom: 5em;
 }
 
+.link {
+  text-decoration: none;
+  border-bottom: 1px solid var(--light-bluegray);
+  color: var(--light-bluegray);
+}
+.external-link {
+  text-decoration: none;
+  border-bottom: 1px solid var(--bluegray);
+  color: var(--light-bluegray);
+}
+.link:hover,
+.external-link:hover {
+  color: var(--contact-skype);
+  border-bottom: 1px solid var(--bg-white);
+}
+
+.qsoft-log li {
+  margin-bottom: 1em;
+}
+.qsoft-log time {
+  font-weight: 500;
+  display: block;
+}
+
 .list ul {
   margin: 0;
 }
@@ -294,6 +335,13 @@ main section {
 }
 .list > li:last-child {
   border-bottom: none; 
+}
+
+.list .date {
+  min-width: 110px;
+}
+.list .logo {
+  min-width: 288px;
 }
 
 .icon {
@@ -319,15 +367,20 @@ main section {
   bottom: -16px;
   left: -36px;
 }
-
-.qsoft-log li {
-  margin-bottom: 1em;
+.icon .fa-laptop:after {
+  content: 'Remote Work';
+  color: gray;
+  font-weight: bold;
+  font-family: 'Roboto';
+  position: relative;
+  top: -1px;
+  left: -9px;
 }
-.qsoft-log time {
-  font-weight: 500;
-  display: block;
-}
 
+#education .logo {
+  min-width: 250px;
+  margin-right: 2em;
+}
 
 footer {
   margin-top: 5em;
