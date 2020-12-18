@@ -76,6 +76,12 @@ h2.fun span{
 .f-align-center {
   align-items: center;
 }
+.f-jc-between {
+  justify-content: space-between;
+}
+.f-grow {
+  flex-grow: 1;
+}
 
 .mr-2 {
   margin-right: 2em;
@@ -346,7 +352,7 @@ footer .container li a {
   justify-content: space-around;
   flex-direction: column;
   text-align: center;
-  text-decoratio*n: none;
+  text-decoration: none;
 }
 footer .container li i {
   font-size: 2em;
