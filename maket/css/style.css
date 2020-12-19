@@ -1,5 +1,5 @@
 :root {
-  --bg-white: white;
+  --bg-color: white;
   --main-color: #444;
   --dark-color: #2c2c2c;
   --shadow-lightgray: rgba(0, 0, 0, 0.07);
@@ -97,11 +97,11 @@ body {
   font-size: 1.2em;
   font-family: "Roboto", Arial, sans-serif;
   line-height: 1.5;
-  background-color: var(--bg-white);
+  background-color: var(--bg-color);
 }
 
 
-h2 {
+h3 {
   position: relative;
   margin: 2em 0;
   font-size: 2em;
@@ -109,7 +109,7 @@ h2 {
   border-bottom: 2px solid var(--main-header-border);
 }
 
-h2.fun span{
+h3.fun span{
   position: absolute;
   right: 0;
   font-size: 0.5em;
@@ -153,39 +153,6 @@ h2.fun span{
 .ml-2 {
   margin-left: 2em;
 }
-
-/* --- Ссылки на соц.сети и сервисы --- */
-
-.contacts li a {
-  filter: grayscale(90%);
-}
-.contacts li a:hover {
-  filter: grayscale(0);
-}
-
-.contacts li a.gmail {
-  color: var(--contact-gmail);
-}
-.contacts li a.phone {
-  color: var(--contact-phone);
-}
-.contacts li a.telegram {
- color: var(--contact-telegram);
-}
-.contacts li a.skype {
-  color: var(--contact-skype);
-}
-.contacts li a.linkedin {
-  color: var(--contact-linkedin);
-}
-.contacts li a.github {
-  color: var(--contact-github);
-}
-.contacts li a.github:hover {
-  color: var(--contact-github-hover);
-}
-
-
 
 /* --- Навигация --- */
 
@@ -278,7 +245,7 @@ nav.main a:hover span:last-child {
 
 .header {
   display: flex;
-  margin: 90px 0 60px;
+  margin: 120px 0 30px;
   padding: 20px;
 }
 .header img {
@@ -302,36 +269,75 @@ nav.main a:hover span:last-child {
   margin: 0 0 10px;
   font-size: 3em;
 }
-.header .name h4 {
+.header .name h2 {
   margin: 0 0 20px;
   font-size: 1.5em;
 }
 
 .header .name ul {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  list-style: none;
   padding: 0;
   margin: 0;
+  width: 300px;
+  list-style: none;
   font-size: 1.1em;
 }
 .header .name li {
-  padding: 0.3em 1em 0.3em 0;
+  /*padding: 0.3em 1em 0.3em 0;*/
 }
+/* --- Ссылки на соц.сети и сервисы --- */
 .header .name a {
+  display: block;
+  padding: 0.5em;
   text-decoration: none;
+  border: 1px dashed var(--bg-color);
 }
 .header .name a i {
-  margin-right: 0.5em;
+  /*margin-right: 0.5em;*/
 }
-.header .name li:last-child .github {
+
+.contacts li a:hover {
+  border: 1px dashed;
+  border-radius: 8px;
+  filter: grayscale(75%);
+}
+
+.contacts li a.gmail {
+  color: var(--contact-gmail);
+}
+.contacts li a.phone {
+  color: var(--contact-phone);
+}
+.contacts li a.telegram {
+ color: var(--contact-telegram);
+}
+.contacts li a.skype {
+  color: var(--contact-skype);
+}
+.contacts li a.linkedin {
+  color: var(--contact-linkedin);
+}
+.contacts li a.github {
+  color: var(--contact-github);
+}
+.contacts li a.github:hover {
+  color: var(--contact-github-hover);
+}
+.contacts li.big {
+  position: absolute;
+  top: 6px;
+  right: -150px;
+}
+.header .name li.big a {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.header .name li:last-child .github i {
+.header .name li.big  i {
   font-size: 2em;
   margin: 0;
 }
@@ -346,20 +352,38 @@ main section {
   margin-bottom: 5em;
 }
 
+#skills {
+    position: relative;
+}
+#skills:before {
+    z-index:-1;
+    position: absolute;
+    right: 0;
+    top: 60%;
+    opacity:0.2;
+    content: '';
+    width: 33%;
+    height: 33%;
+    background-image: url(../img/laravel-old.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+}
+
 .link {
   text-decoration: none;
-  border-bottom: 1px solid var(--light-bluegray);
-  color: var(--light-bluegray);
+  border-bottom: 1px dashed var(--contact-linkedin);
+  color: var(--contact-linkedin);
 }
 .external-link {
   text-decoration: none;
-  border-bottom: 1px solid var(--bluegray);
-  color: var(--light-bluegray);
+  border-bottom: 1px solid var(--contact-linkedin);
+  color: var(--contact-linkedin);
 }
 .link:hover,
 .external-link:hover {
   color: var(--contact-skype);
-  border-bottom: 1px solid var(--bg-white);
+  border-bottom: 1px solid var(--bg-color);
 }
 
 .qsoft-log li {
@@ -448,14 +472,31 @@ footer .container ul {
   list-style: none;
 }
 footer .container li a {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
+  display: block;
+  padding: 0.5em 0.5em 0.2em;
+  border: 1px dashed var(--bg-color);
   text-align: center;
   text-decoration: none;
 }
 footer .container li i {
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 0 0 0.3em;
 }
 
+.rotate{
+-webkit-transition-duration: 0.8s;
+-moz-transition-duration: 0.8s;
+-o-transition-duration: 0.8s;
+transition-duration: 0.8s;
+-webkit-transition-property: -webkit-transform;
+-moz-transition-property: -moz-transform;
+-o-transition-property: -o-transform;
+transition-property: transform;
+overflow: hidden;
+}
+.rotate:hover{
+cursor: pointer;
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+}
