@@ -133,276 +133,315 @@
 
       <section id="projects">
         <h3 class="fun">Проекты<span>git branch -a --list</span></h3>
-        <div>
-          <label>2020</label>
-          <ul>
 
-            <li>HTML / CSS / JS<br>
-              <a href="https://github.com/Avxodiar/unique">
-                Одностраничный (Landing page) сайт "Портфолио"
-              </a> (этот сайт)
-            </li>
+        <ul>
+          <li>
+            <section>
+              <div class="left">
+                <p class="mt0">#HTML5 #CSS3 #JavaScript</p>
+                <!-- <img src="projects/unique/logo.jpg" width="300" height="151" alt="Портфолио"> -->
+              </div>
+              <div class="desc">
+                <h4>
+                  [2020] Одностраничный (Landing page) сайт "Портфолио"
+                  <a href="https://github.com/Avxodiar/portfolio" target="_blank">
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                </h4>
+                (этот сайт)
+              </div>
+            <section>
+          </li>
 
+          <li>
+            <section>
+              <div class="left">
+                <p class="mt0">#Laravel #MySql #Bootstrap</p>
+                <img src="projects/unique/logo.jpg" width="300" height="151" alt="Unique">
+              </div>
+              <div class="desc">
+                <h4>
+                  [2020] Учебный проект "Unique"
+                  <a href="https://github.com/Avxodiar/unique" target="_blank">
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                </h4>
 
-            <li>
-              Laravel / Bootstrap<br>
-              <section>
-                <div class="left">
-                  <img src="projects/unique/logo.jpg" width="300" height="151" alt="Unique">
-                </div>
-                <div class="desc">
-                  <h4>
-                    Учебный проект "Unique"
-                    <a href="https://github.com/Avxodiar/unique" target="_blank">
-                      <i class="fa fa-external-link"></i>
-                    </a>
-                  </h4>
+                <p>Проект "Unique" это учебный проект на Laravel v.8 по созданию одностраничного сайта "landing page". Обычно такие сайты не предусматриваю наличие администраторской части (/admin), но с целью изучения встроенного механизма авторизации (через фасад Auth) и более полной работы с моделями данных (создание, обновление, удалени) дополнительно создана админ.часть.</p>
+                <p>Администраторская часть предусматривает создание, изменение и удаление большиства секций сайта, кроме раздела Клиенты и формы для связи "Контакты". Все операции реализуются с валидацией данных и учетом различных моделей базы данных представляющих данные секции.</p>
+                <p class="description"><b>Используемые технологии:</b> PHP 7.3+, MySQL 5.7+, composer</p>
+                <p class="description"><b>Фреймворк</b>: Laravel 8</p>
+                <p>
+                  <b>Шаблоны:</b><br>
+                  <ul>
+                    <li>публичная часть - на базе готового шаблона от WebThemez.com</li>
+                    <li>администраторская часть - самостоятельно, с использованием библиотеки Bootstrap v4.5</li>
+                  </ul>
+                </p>
 
-                  <p>Проект "Unique" это учебный проект на Laravel v.8 по созданию одностраничного сайта "landing page". Обычно такие сайты не предусматриваю наличие администраторской части (/admin), но с целью изучения встроенного механизма авторизации (через фасад Auth) и более полной работы с моделями данных (создание, обновление, удалени) дополнительно создана админ.часть.</p>
-                  <p>Администраторская часть предусматривает создание, изменение и удаление большиства секций сайта, кроме раздела Клиенты и формы для связи "Контакты". Все операции реализуются с валидацией данных и учетом различных моделей базы данных представляющих данные секции.</p>
-                  <p class="description"><b>Используемые технологии:</b> PHP 7.3+, MySQL 5.7+, composer</p>
-                  <p class="description"><b>Фреймворк</b>: Laravel 8</p>
+                <details>
+                  <summary><i>Примечание</i>:</summary>
                   <p>
-                    <b>Шаблоны:</b><br>
-                    <ul>
-                      <li>публичная часть - на базе готового шаблона от WebThemez.com</li>
-                      <li>администраторская часть - самостоятельно, с использованием библиотеки Bootstrap v4.5</li>
-                    </ul>
+                    В связи с тем, в что в Laravel 8, службы аутентификации предоставляеются пакетам Jetstream и Fortify, админ.часть не предусматривает управление пользователями, кроме как регистрации, аутентификации и завершении сеанса, функционал которых создан самостоятельно. Также не предусмотрено управление ролями и доступом к различным секциям панели управления и правами на операции, в связи чем любой авторизованный пользователь имеет полный доступ к любым действиям, что в реальном проекте конечно не допустимо.
                   </p>
+                </details>
+              </div>
+            </section>
+          </li>
 
-                  <details>
-                    <summary><i>Примечание</i>:</summary>
-                    <p>
-                      В связи с тем, в что в Laravel 8, службы аутентификации предоставляеются пакетам Jetstream и Fortify, админ.часть не предусматривает управление пользователями, кроме как регистрации, аутентификации и завершении сеанса, функционал которых создан самостоятельно. Также не предусмотрено управление ролями и доступом к различным секциям панели управления и правами на операции, в связи чем любой авторизованный пользователь имеет полный доступ к любым действиям, что в реальном проекте конечно не допустимо.
-                    </p>
-                  </details>
-                </div>
-              </section>
-            </li>
+          <li>
+            <section>
+              <div class="left">
+                <p class="mt0">#PHP #MySql #composer</p>
+                <img src="projects/yeticave/logo.png" width="300" height="151" alt="Глейси">
+                <p>
+                  <a href="projects/yeticave/specification.pdf" target="_blank" class="fa fa-file-pdf-o">Спецификация</a>
+                  &nbsp;
+                  <a href="projects/yeticave/tz_yeticave.docx" target="_blank" class="fa fa-file-pdf-o">Тех.задание</a>
+                  &nbsp;
+                  <a href="projects/yeticave/tz_detail.pdf" target="_blank" class="fa fa-file-pdf-o">Детальное задание</a>
+                </p>
+                </p>
+              </div>
+              <div class="desc">
+                <h4>
+                  [2020] Личный проект интернет-аукцион «YetiCave»
+                  <a href="https://github.com/Avxodiar/yeticave" target="_blank">
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                </h4>
+                <p class="description">Выполнен в рамках интенсива <i>HTML Academy
+                 <nobr>«Профессиональный PHP, уровень 1».</nobr></i></p>
+                <p>Интернет-аукцион «YetiCave» – это простой сервис, позволяющий пользователям продать свои личные вещи по максимально выгодной для них цене - на основе аукциона. Пользователь, предложивший максимальную цену получает вещь по этой стоимости.</p>
+                <p class="description">
+                  <b>Используемые технологии:</b> PHP 7.2, MySQL 5.7, процедурный стиль c паттерном "Page Controller" + Composer с автозагрузкой и пакетом SwiftMailer для работы с почтой
+                </p>
+                <p class="description">
+                  <b>Фреймворк</b>: не используются - условие обучения
+                </p>
+                <p><b>Макет:</b> верстка не требуется</p>
 
-
-            <li>PHP<br>
-              <section>
-                <div class="left">
-                  <img src="projects/yeticave/logo.png" width="300" height="151" alt="Глейси">
-                  <p>
-                    <a href="projects/yeticave/specification.pdf" target="_blank" class="fa fa-file-pdf-o">Спецификация</a>
-                    &nbsp;
-                    <a href="projects/yeticave/tz_yeticave.docx" target="_blank" class="fa fa-file-pdf-o">Тех.задание</a>
-                    &nbsp;
-                    <a href="projects/yeticave/tz_detail.pdf" target="_blank" class="fa fa-file-pdf-o">Детальное задание</a>
-                  </p>
-                  </p>
-                </div>
-                <div class="desc">
-                  <h4>
-                    Личный проект интернет-аукцион «YetiCave»
-                    <a href="https://github.com/Avxodiar/yeticave" target="_blank">
-                      <i class="fa fa-external-link"></i>
-                    </a>
-                  </h4>
-                  <p>Интернет-аукцион «YetiCave» – это простой сервис, позволяющий пользователям продать свои личные вещи по максимально выгодной для них цене - на основе аукциона. Пользователь, предложивший максимальную цену получает вещь по этой стоимости.</p>
-                  <p class="description">Выполнен в рамках интенсива <i>HTML Academy
-                   <nobr>«Профессиональный PHP, уровень 1».</nobr></i></p>
-                  <p class="description">
-                    <b>Используемые технологии:</b> PHP 7.2, MySQL 5.7, процедурный стиль c паттерном "Page Controller" + Composer с автозагрузкой и пакетом SwiftMailer для работы с почтой
-                  </p>
-                  <p class="description">
-                    <b>Фреймворк</b>: не используются - условие обучения
-                  </p>
-                  <p><b>Макет:</b> верстка не требуется</p>
-
-                  <details>
-                    <summary><i>Примечания</i>:</summary>
-                    <ol>
-                      <li>В соответствии с ТЗ п.6, в корне проекта находится файл queries.sql со схемой БД и примерами запросов на выборку/изменение данных. Более логичным в корне хранить только файл со схемой создания БД и ее структурой, а дополнительное описание с примерами запросов к БД вынести в отдельный файл. А еще правильнее было бы использовать инсталятор (install.php или Makefile), но это уже совсем другая история...</li>
-                      <li>В соответствии с ТЗ п.9.2, в файле index.php подключается скрипт getwinner.php, занимающийся определением ставок у завершенных лотов и рассылкой писем победителям.<br>
-                      Правильнее было бы данный скрипт повесить на крон и удалить его вызов в index.php.
-                      </li>
-                    </ol>
-                  </details>
-                </div>
-              </section>
-            </li>
+                <details>
+                  <summary><i>Примечания</i>:</summary>
+                  <ol>
+                    <li>В соответствии с ТЗ п.6, в корне проекта находится файл queries.sql со схемой БД и примерами запросов на выборку/изменение данных. Более логичным в корне хранить только файл со схемой создания БД и ее структурой, а дополнительное описание с примерами запросов к БД вынести в отдельный файл. А еще правильнее было бы использовать инсталятор (install.php или Makefile), но это уже совсем другая история...</li>
+                    <li>В соответствии с ТЗ п.9.2, в файле index.php подключается скрипт getwinner.php, занимающийся определением ставок у завершенных лотов и рассылкой писем победителям.<br>
+                    Правильнее было бы данный скрипт повесить на крон и удалить его вызов в index.php.
+                    </li>
+                  </ol>
+                </details>
+              </div>
+            </section>
+          </li>
 
 
-            <li>JS<br>
-              <section>
-                <div class="left">
-                  <img src="projects/code-and-magic/logo.png" width="300" height="151" alt="Глейси">
-                  <p>
-                    <a href="projects/code-and-magic/specification.pdf" target="_blank" class="fa fa-file-pdf-o">Спецификация</a>
-                    &nbsp;
-                    <a href="projects/code-and-magic/criteria.pdf" target="_blank" class="fa fa-file-pdf-o">Критерии</a>
-                  </p>
-                  </p>
-                </div>
-                <div class="desc">
-                  <h4>
-                    Учебный проект «Код и Магия»
-                    <a href="https://avxodiar.github.io/code-and-magic/" target="_blank">
-                      <i class="fa fa-external-link"></i>
-                    </a>
-                  </h4>
-                  <p>Демо-страница игры-платформера «Код и Магия», на которой можно поиграть в игру, а в специальном окне настроить внешний вид игрового персонажа, купить для него артефакты, которые помогают в игре и посмотреть на похожих персонажей других игроков.</p>
-                  <p class="description">Выполнен в рамках базового интенсива <i>HTML Academy
-                   <nobr>«Профессиональный Javascript, уровень 1».</nobr></i></p>
-                  <p class="description">
-                    <b>Используемые технологии:</b> нативный JavaScript<br>
-                  </p>
-                  <p><b>Макет:</b> верстка не требуется</p>
-                </div>
-              </section>
-            </li>
+          <li>
+            <section>
+              <div class="left">
+                <p class="mt0">#javascript</p>
+                <img src="projects/code-and-magic/logo.png" width="300" height="151" alt="Глейси">
+                <p>
+                  <a href="projects/code-and-magic/specification.pdf" target="_blank" class="fa fa-file-pdf-o">Спецификация</a>
+                  &nbsp;
+                  <a href="projects/code-and-magic/criteria.pdf" target="_blank" class="fa fa-file-pdf-o">Критерии</a>
+                </p>
+                </p>
+              </div>
+              <div class="desc">
+                <h4>
+                  [2019] Учебный проект «Код и Магия»
+                  <a href="https://avxodiar.github.io/code-and-magic/" target="_blank">
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                </h4>
+                <p class="description">Выполнен в рамках базового интенсива <i>HTML Academy
+                 <nobr>«Профессиональный Javascript, уровень 1».</nobr></i></p>
+                <p>Демо-страница игры-платформера «Код и Магия», на которой можно поиграть в игру, а в специальном окне настроить внешний вид игрового персонажа, купить для него артефакты, которые помогают в игре и посмотреть на похожих персонажей других игроков.</p>
+                <p class="description">
+                  <b>Используемые технологии:</b> нативный JavaScript<br>
+                </p>
+                <p><b>Макет:</b> верстка не требуется</p>
+              </div>
+            </section>
+          </li>
 
-          </ul>
-        </div>
-        <div>
-          <label>2019 (HTML / CSS)</label>
-          <ul>
-
-            <li>
-              <section>
-                <div class="left">
-                  <img src="projects/gllacy/logo.jpg" width="300" height="151" alt="Глейси">
-                  <p>
-                    <a href="projects/gllacy/specification.pdf" target="_blank" class="fa fa-file-pdf-o">Спецификация</a>
-                    &nbsp;
-                    <a href="projects/gllacy/criteria.pdf" target="_blank" class="fa fa-file-pdf-o">Критерии</a>
-                  </p>
-                </div>
-                <div class="desc">
-                  <h4>
-                    Личный проект «Глейси»
-                    <a href="https://avxodiar.github.io/gllacy/" target="_blank">
-                      <i class="fa fa-external-link"></i>
-                    </a>
-                  </h4>
-                  <p class="description">Выполнен в рамках базового интенсива <i>HTML Academy
-                   <nobr>«Профессиональный HTML и CSS, уровень 1».</nobr></i></p>
-                   <p class="description">
-                    Используемые технологии: HTML5 / CSS3 / нативный JavaScript<br>
-                    Фиксированная вёрстка, прогрессивное улучшение
-                  </p>
-                  <details>
-                    <summary><b>Макет</b></summary>
-                    <figure class="maket">
-                      <img src="projects/gllacy/gllacy-index-1200.jpg" width="250" height="503" alt="Макет Глейси 1200 - главная страница">
-                      <img src="projects/gllacy/gllacy-index-900.jpg" width="250" height="675" alt="Макет Глейси 900 - главная страница">
-                      <img src="projects/gllacy/gllacy-catalog-1200.jpg" width="250" height="344" alt="Макет Глейси 1200 - страница каталога">
-                      <img src="projects/gllacy/gllacy-catalog-900.jpg" width="250" height="413" alt="Макет Глейси 900 - страница каталога">
-                      <img src="projects/gllacy/gllacy-catalog-900-item.jpg" width="250" height="413" alt="Макет Глейси 900 - страница каталога с товаром в фокусе">
-                      <img src="projects/gllacy/gllacy-styleguide.jpg" width="250" height="476" alt="Макет Глейси - стилизация элементов">
-                    </figure>
-                  </details>
-                </div>
-              </section>
-            </li>
+          <li>
+            <section>
+              <div class="left">
+                <p class="mt0">#HTML5 #CSS3 #javascript</p>
+                <img src="projects/gllacy/logo.jpg" width="300" height="151" alt="Глейси">
+                <p>
+                  <a href="projects/gllacy/specification.pdf" target="_blank" class="fa fa-file-pdf-o">Спецификация</a>
+                  &nbsp;
+                  <a href="projects/gllacy/criteria.pdf" target="_blank" class="fa fa-file-pdf-o">Критерии</a>
+                </p>
+              </div>
+              <div class="desc">
+                <h4>
+                  [2019] Личный проект «Глейси»
+                  <a href="https://avxodiar.github.io/gllacy/" target="_blank">
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                </h4>
+                <p class="description">Выполнен в рамках базового интенсива <i>HTML Academy
+                 <nobr>«Профессиональный HTML и CSS, уровень 1».</nobr></i></p>
+                 <p class="description">
+                  Используемые технологии: HTML5 / CSS3 / нативный JavaScript<br>
+                  Фиксированная вёрстка, прогрессивное улучшение
+                </p>
+                <details>
+                  <summary><b>Макет</b></summary>
+                  <figure class="maket">
+                    <img src="projects/gllacy/gllacy-index-1200.jpg" width="250" height="503" alt="Макет Глейси 1200 - главная страница">
+                    <img src="projects/gllacy/gllacy-index-900.jpg" width="250" height="675" alt="Макет Глейси 900 - главная страница">
+                    <img src="projects/gllacy/gllacy-catalog-1200.jpg" width="250" height="344" alt="Макет Глейси 1200 - страница каталога">
+                    <img src="projects/gllacy/gllacy-catalog-900.jpg" width="250" height="413" alt="Макет Глейси 900 - страница каталога">
+                    <img src="projects/gllacy/gllacy-catalog-900-item.jpg" width="250" height="413" alt="Макет Глейси 900 - страница каталога с товаром в фокусе">
+                    <img src="projects/gllacy/gllacy-styleguide.jpg" width="250" height="476" alt="Макет Глейси - стилизация элементов">
+                  </figure>
+                </details>
+              </div>
+            </section>
+          </li>
 
 
-            <li>
-              <section>
-                <div class="left">
-                  <img src="projects/barbershop/logo.png" width="300" height="151" alt="Барбершоп Бородинский">
-                  <p>
-                    <a href="projects/barbershop/specification.pdf" target="_blank" class="fa fa-file-pdf-o">Спецификация</a>
-                    &nbsp;
-                    <a href="projects/barbershop/criteria.pdf" target="_blank" class="fa fa-file-pdf-o">Критерии</a>
-                  </p>
-                </div>
-                <div class="desc">
-                  <h4>
-                     Учебный проект «Барбершоп Бородинский»
-                    <a href="https://avxodiar.github.io/gllacy/" target="_blank">
-                      <i class="fa fa-external-link"></i>
-                    </a>
-                  </h4>
-                  <p class="description">Выполнен в рамках базового интенсива <i>HTML Academy
-                    <nobr>«Профессиональный HTML и CSS, уровень 1».</nobr></i></p>
-                  <p class="description">
-                    Используемые технологии: HTML5 / CSS3 / нативный JavaScript<br>
-                    Фиксированная вёрстка, прогрессивное улучшение
-                  </p>
-                  <p>
-                  <details>
-                    <summary><b>Макет</b></summary>
-                    <figure class="maket">
-                      <img src="projects/barbershop/barbershop-index.jpg" width="250" height="172" alt="Макет Барбершопа - главная страница">
-                      <img src="projects/barbershop/barbershop-shop.jpg" width="250" height="244" alt="Макет Барбершопа - страница каталога">
-                      <img src="projects/barbershop/barbershop-price.jpg" width="250" height="221" alt="Макет Барбершопа - страница цен">
-                      <img src="projects/barbershop/barbershop-item.jpg" width="250" height="242" alt="Макет Барбершопа - страница товара">
-                    </figure>
-                  </details>
-                </div>
-              </section>
-            </li>
+          <li>
+            <section>
+              <div class="left">
+                <p class="mt0">#HTML5 #CSS3 #javascript</p>
+                <img src="projects/barbershop/logo.png" width="300" height="151" alt="Барбершоп Бородинский">
+                <p>
+                  <a href="projects/barbershop/specification.pdf" target="_blank" class="fa fa-file-pdf-o">Спецификация</a>
+                  &nbsp;
+                  <a href="projects/barbershop/criteria.pdf" target="_blank" class="fa fa-file-pdf-o">Критерии</a>
+                </p>
+              </div>
+              <div class="desc">
+                <h4>
+                   [2019] Учебный проект «Барбершоп Бородинский»
+                  <a href="https://avxodiar.github.io/barbershop/" target="_blank">
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                </h4>
+                <p class="description">Выполнен в рамках базового интенсива <i>HTML Academy
+                  <nobr>«Профессиональный HTML и CSS, уровень 1».</nobr></i></p>
+                <p class="description">
+                  Используемые технологии: HTML5 / CSS3 / нативный JavaScript<br>
+                  Фиксированная вёрстка, прогрессивное улучшение
+                </p>
+                <p>
+                <details>
+                  <summary><b>Макет</b></summary>
+                  <figure class="maket">
+                    <img src="projects/barbershop/barbershop-index.jpg" width="250" height="172" alt="Макет Барбершопа - главная страница">
+                    <img src="projects/barbershop/barbershop-shop.jpg" width="250" height="244" alt="Макет Барбершопа - страница каталога">
+                    <img src="projects/barbershop/barbershop-price.jpg" width="250" height="221" alt="Макет Барбершопа - страница цен">
+                    <img src="projects/barbershop/barbershop-item.jpg" width="250" height="242" alt="Макет Барбершопа - страница товара">
+                  </figure>
+                </details>
+              </div>
+            </section>
+          </li>
 
-          </ul>
-        </div>
+          <li>
+            <section>
+              <div class="left">
+                <p class="mt0">#1С:Bitrix #PHP</p>
+                <!-- <img src="projects/unique/logo.jpg" width="300" height="151" alt="Портфолио"> -->
+              </div>
+              <div class="desc">
+                <h4>
+                  [2012-2017] Рабочий проект: магазин МТС
+                  <a href="http://shop.mts.ru/" target="_blank" rel="nofollow noopener">
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                </h4>
+                <p>Проект магазина МТС реализован на 1С:Битрикс, однако очень много функционала было самописное и/или с использованием фреймворков, например весь функционал по построению маршрутов/времени доставки для товаров в заказах осуществлялось с использованием Laravel, кэширование данных о товарах с использованием memcached, а обработка заказов в очереди через RabbitMQ. Первоначально проект был на SVN, но затем был перенесен на GIT.</p>
 
-        <div>
-          <label>2012-2017 (1С:Bitrix)</label>
-          <ul>
-            <li>Рабочий проект: <a href="http://shop.mts.ru/" target="_blank" rel="nofollow noopener">магазин МТС</a>
-            <p>Проект магазина МТС реализован на 1С:Битрикс, однако очень много функционала было самописное и/или с использованием фреймворков, например весь функционал по построению маршрутов/времени доставки для товаров в заказах осуществлялось с использованием Laravel, кэширование данных о товарах с использованием memcached, а обработка заказов в очереди через RabbitMQ. Первоначально проект был на SVN, но затем был перенесен на GIT.</p>
+                <details>
+                  <summary>Прямое участие в реализации следующих функционалов</summary>
+                  <ul class="qsoft-log">
+                    <li>
+                      <time datetime="2017-01">Январь 2017</time>
+                      Внедрение возможности предзаказа планируемых к продаже товаров
+                    </li>
+                    <li>
+                      <time datetime="2016-12">Декабрь 2016</time>
+                      Проведена полная оптимизация сайта в связи с ростом посетителей в несколько раз.
+                      Хитов пиковая нагрузка в сутки: 7млн.
+                      Обновление данных (импорт наличия товаров на складах в 4300 точках в 87 регионах России и изменения цен) каждые 15 минут.
+                    </li>
+                    <li>
+                      <time datetime="2016-07">Июль 2016</time>
+                      Внедрение проверки наличия товара на складе еще в корзине пользователя в режиме реального времени
+                    </li>
+                    <li>
+                      <time datetime="2016-06">Июнь 2016</time>
+                      Реализована возможность покупки товара в кредит
+                    </li>
+                    <li>
+                      <time datetime="2016-02">Февраль 2016</time>
+                      Интеграция с магазином Телефон.ру
+                    </li>
+                    <li>
+                      <time datetime="2016-08">Август 2015</time>
+                      Автоматизация обработки заказов и снижение нагрузки на call-центр
+                    </li>
+                  </ul>
+                </details>
+              </div>
+            <section>
+          </li>
 
-            <h4>Непосредственное участие по реализации следующего функционала</h4>
-            <ul class="qsoft-log">
-              <li>
-                <time datetime="2017-01">Январь 2017</time>
-                Внедрение возможности предзаказа планируемых к продаже товаров
-              </li>
-              <li>
-                <time datetime="2016-12">Декабрь 2016</time>
-                Проведена полная оптимизация сайта в связи с ростом посетителей в несколько раз.
-                Хитов пиковая нагрузка в сутки: 7млн.
-                Обновление данных (импорт наличия товаров на складах в 4300 точках в 87 регионах России и изменения цен) каждые 15 минут.
-              </li>
-              <li>
-                <time datetime="2016-07">Июль 2016</time>
-                Внедрение проверки наличия товара на складе еще в корзине пользователя в режиме реального времени
-              </li>
-              <li>
-                <time datetime="2016-06">Июнь 2016</time>
-                Реализована возможность покупки товара в кредит
-              </li>
-              <li>
-                <time datetime="2016-02">Февраль 2016</time>
-                Интеграция с магазином Телефон.ру
-              </li>
-              <li>
-                <time datetime="2016-08">Август 2015</time>
-                Автоматизация обработки заказов и снижение нагрузки на call-центр
-              </li>
-            </ul>
+          <li>
+            <section>
+              <div class="left">
+                <p class="mt0">#Joomla #PHP #HTML #CSS</p>
+                <!-- <img src="projects/unique/logo.jpg" width="300" height="151" alt="Портфолио"> -->
+              </div>
+              <div class="desc">
+                <h4>
+                  [2011] магазин models-buy (закрыт в 2016)
+                </h4>
+              </div>
+            <section>
+          </li>
 
-            </li>
+          <li>
+            <section>
+              <div class="left">
+                <p class="mt0">#Joomla #PHP #HTML #CSS</p>
+                <!-- <img src="projects/unique/logo.jpg" width="300" height="151" alt="Портфолио"> -->
+              </div>
+              <div class="desc">
+                <h4>
+                  [2010] ОКБ "Бумажные модели"
+                  <a href="http://models-paper.com/" target="_blank" rel="nofollow noopener">
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                </h4>
+              </div>
+            <section>
+          </li>
 
-          </ul>
-        </div>
+          <li>
+            <section>
+              <div class="left">
+                <p class="mt0">#PHP #HTML #CSS</p>
+                <!-- <img src="projects/unique/logo.jpg" width="300" height="151" alt="Портфолио"> -->
+              </div>
+              <div class="desc">
+                <h4>
+                  [2008] "Наша Дача"
+                  <a href="http://nasha-dacha.com/" target="_blank" rel="nofollow noopener">
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                </h4>
+              </div>
+            <section>
+          </li>
 
-        <div>
-          <label>2010-2011 (Joomla)</label>
-          <ul>
-            <li>2011 магазин models-buy (закрыт 2016)</li>
-            <li>
-              <a href="http://models-paper.com/" target="_blank" rel="nofollow noopener">
-                2010 ОКБ "Бумажные модели"
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <label>2008 (PHP/HTML/CSS)</label>
-          <ul>
-            <li>
-              <a href="http://nasha-dacha.com/" target="_blank" rel="nofollow noopener">
-                 "Наша Дача"
-              </a>
-            </li>
-          </ul>
-        </div>
+        </ul>
       </section>
 
       <section id="expirience">
@@ -422,7 +461,7 @@
               </div>
               <p>
                 Фриланс<br>
-                <a class="link to-anchor" href="#projects">Персональные web-проекты</a></p>
+                <a class="link to-anchor tooltip attr-tip" tooltip="Перейти к разделу 'Проекты'" href="#projects">Персональные web-проекты</a></p>
             </div>
           </li>
 
@@ -436,7 +475,7 @@
               </div>
               <p>
                 Главный програмист<br>
-                <a class="external-link" href="https://qsoft.ru/project/563/" target="_blank" rel="nofollow noopener">Отдела тех.поддержки и<br> развития проекта <b>МТС</b></a></p>
+                <a class="external-link tooltip attr-tip" tooltip="Перейти на сайт QSOFT" href="https://qsoft.ru/project/563/" target="_blank" rel="nofollow noopener">Отдела тех.поддержки и<br> развития проекта <b>МТС</b></a></p>
             </div>
           </li>
 
@@ -467,17 +506,36 @@
               <!-- <b class="courses-logo logo-sololearn">SoloLearn</b> -->
               <img src="img/sololearn.svg" width="250px" height="37px" alt="SoloLearn">
             </a>
-            <div class="mr-2">
-              <b>2019 - 2020</b><br>
-              онлайн курсы
-            </div>
-            <div>
-              Сертификаты:
-              <div class="d-flex f-jc-between">
-                <a class="mr-1 external-link" href="https://www.sololearn.com/Certificate/1059-16609287/pdf/" target="_blank" rel="nofollow noopener">PHP</a>
-                <a class="mr-1 external-link" href="https://www.sololearn.com/Certificate/1060-16609287/pdf/" target="_blank" rel="nofollow noopener">SQL</a>
-                <a class="mr-1 external-link" href="https://www.sololearn.com/Certificate/1014-16609287/pdf/" target="_blank" rel="nofollow noopener">HTML</a>
-                <a class="mr-1 external-link" href="https://www.sololearn.com/Certificate/1023-16609287/pdf/" target="_blank" rel="nofollow noopener">CSS</a>
+            <div class="d-flex" style="flex-direction: column; flex-grow: 1;">
+              <div><b>2019 - 2020</b> онлайн курсы</div>
+
+              <div class="d-flex">
+                <span>Сертификаты:</span>
+                <span>
+                  <a class="ml-1 link magnific-iframe tooltip tip-sertificate" href="img/certificates/sololearn_php.pdf">PHP </a>
+                  ( <a class="external-link no-underline tooltip tip-orig" href="https://www.sololearn.com/Certificate/1059-16609287/pdf/" target="_blank" rel="nofollow noopener">
+                    <i class="fa fa-external-link"></i>
+                  </a> ),
+                </span>
+                <span>
+                  <a class="ml-1 link magnific-iframe tooltip tip-sertificate" href="img/certificates/sololearn_sql.pdf">SQL</a>
+                  ( <a class="external-link no-underline tooltip tip-orig" href="https://www.sololearn.com/Certificate/1060-16609287/pdf/" target="_blank" rel="nofollow noopener">
+                    <i class="fa fa-external-link"></i>
+                  </a> ),
+
+                </span>
+                <span>
+                  <a class="ml-1 link magnific-iframe tooltip tip-sertificate" href="img/certificates/sololearn_html.pdf">HTML</a>
+                  ( <a class="external-link no-underline tooltip tip-orig" ref="https://www.sololearn.com/Certificate/1014-16609287/pdf/" target="_blank" rel="nofollow noopener">
+                    <i class="fa fa-external-link"></i>
+                  </a> ),
+                </span>
+                <span>
+                  <a class="ml-1 link magnific-iframe tooltip tip-sertificate" href="img/certificates/sololearn_css.pdf">CSS</a>
+                  ( <a class="external-link no-underline tooltip tip-orig" href="https://www.sololearn.com/Certificate/1023-16609287/pdf/" target="_blank" rel="nofollow noopener">
+                    <i class="fa fa-external-link"></i>
+                  </a> )
+                </span>
                 <div class="hidden">
                   JS - https://www.sololearn.com/Certificate/-16609287/pdf/<br>
                   jQuery - https://www.sololearn.com/Certificate/-16609287/pdf/
@@ -493,7 +551,7 @@
                 <img src="img/hexlet.jpg" width="154px" height="48px" alt="Hexlet">
               </a>
               <p><b>2018 - 2020</b><br>
-                  <a class="external-link" href="https://ru.hexlet.io/u/avxodiar/courses" target="_blank" rel="nofollow noopener">общедоступные курсы: Html, Css, Php, Git</a>
+                  <a class="external-link tooltip tip-course" href="https://ru.hexlet.io/u/avxodiar/courses" target="_blank" rel="nofollow noopener">общедоступные курсы: Html, Css, Php, Git</a>
               </p>
             </li>
 
@@ -503,7 +561,7 @@
                 <img src="img/htmlacademy.svg"  width="142px" height="48px" alt="HtmlAcademy">
               </a>
               <p><b>2018 - 2019</b><br>
-                 <a class="external-link" href="https://htmlacademy.ru/profile/id14311/progress" target="_blank" rel="nofollow noopener">общедоступные курсы: Html, Css</a>
+                 <a class="external-link tooltip tip-course" href="https://htmlacademy.ru/profile/id14311/progress" target="_blank" rel="nofollow noopener">общедоступные курсы: Html, Css</a>
               </p>
             </li>
           <!-- </div> -->
@@ -520,8 +578,8 @@
             <div>
               Сертификаты:
               <div class="d-flex f-jc-between">
-                <a class="mr-1 link" href="img/certificates/bitrix_BXS-CM.pdf" target="_blank" rel="nofollow noopener">BXS-CM</a>
-                <a class="mr-1 link" href="img/certificates/bitrix_BX-DEV001.pdf" target="_blank" rel="nofollow noopener">BX-DEV001</a>
+                <a class="mr-1 link magnific-iframe tooltip tip-sertificate" href="img/certificates/bitrix_BXS-CM.pdf" target="_blank" rel="nofollow noopener">BXS-CM</a>
+                <a class="mr-1 link magnific-iframe tooltip tip-sertificate" href="img/certificates/bitrix_BX-DEV001.pdf" target="_blank" rel="nofollow noopener">BX-DEV001</a>
               </div>
             </div>
           </li>

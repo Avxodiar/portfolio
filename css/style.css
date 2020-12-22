@@ -27,6 +27,7 @@
 
   /* dark */
   --light-gray: #c9c9c9;
+  --light-bluesteel :#4682B4; /*steelblue*/
   --light-bluegray: #607D8B;
   --bluegray: #546E7A;
   --dark-bluegray: #455A64;
@@ -133,6 +134,12 @@ h3.fun span{
   flex-grow: 1;
 }
 
+.m0 {
+  margin: 0;
+}
+.mt0 {
+  margin-top: 0;
+}
 .mx-1 {
   margin-left: 1em;
   margin-right: 1em;
@@ -382,8 +389,18 @@ main section {
 }
 .link:hover,
 .external-link:hover {
-  color: var(--contact-skype);
+  color: var(--dark-navygray);
+}
+.link:hover {
+  border-bottom: 1px dashed var(--dark-navygray);
+}
+.external-link:hover {
+  border-bottom: 1px solid var(--dark-navygray);
+}
+.link.no-underline,
+.external-link.no-underline {
   border-bottom: 1px solid var(--bg-color);
+  text-decoration: none;
 }
 
 .qsoft-log li {
@@ -448,6 +465,10 @@ main section {
   left: -9px;
 }
 
+.fa-file-pdf-o:before {
+  margin-right: 5px;
+}
+
 #education .logo {
   min-width: 250px;
   margin-right: 2em;
@@ -483,6 +504,7 @@ footer .container li i {
   margin: 0 0 0.3em;
 }
 
+/* вращение иконки */
 .rotate{
 -webkit-transition-duration: 0.8s;
 -moz-transition-duration: 0.8s;
@@ -501,74 +523,158 @@ cursor: pointer;
 -o-transform: rotate(360deg);
 }
 
-/*-- old styles -- */
+/* всплывающие подсказки */
 
-#projects > div > ul > li {
+.tooltip {
+  position: relative;
+}
+.tooltip::before,
+.tooltip::after {
+  text-transform: none;
+  font-size: .9em;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+.tooltip::before {
+  content: '';
+  border: 5px solid transparent;
+  z-index: 1001;
+}
+.tooltip::after {
+  content: '';
+  /*font-family: Helvetica, sans-serif;*/
+  text-align: center;
+  min-width: 3em;
+  max-width: 21em;
+  /*white-space: nowrap;*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 1ch 1.5ch;
+  border-radius: .3ch;
+  box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+  background: #607D8B;
+  color: #fff;
+  z-index: 1;
+}
+.tooltip::before,
+.tooltip::after {
+  left: 50%;
+  transform: translate(-50%, -.5em);
+}
+.tooltip::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: #607D8B;
+}
+.tooltip::after {
+  bottom: calc(100% + 5px);
+}
+
+.tooltip:hover::before,
+.tooltip:hover::after {
+  display: block;
+  animation: tooltips-vert 300ms ease-out forwards;
+}
+@keyframes tooltips-vert {
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* текст подсказок */
+
+/* <span tooltip="info">arger</span>*/
+.tooltip.attr-tip::after {
+  content: attr(tooltip);
+}
+.tooltip.tip-source::after {
+  content: 'Посмотреть исходники';
+}
+.tooltip.tip-site::after {
+  content: 'Посмотреть сайт';
+}
+.tooltip.tip-sertificate::after {
+  content: 'Посмотреть сертификат';
+}
+.tooltip.tip-orig::after {
+  content: 'Перейти к оригиналу';
+}
+.tooltip.tip-course::after {
+  content: 'Перейти к списку курсов';
+}
+
+
+
+/*-- section projects -- */
+
+#projects > ul > li {
   padding-top: 25px;
   padding-bottom: 25px;
   margin-bottom: 25px;
   border-bottom: 3px dashed lightgray;
 }
 
-#projects > div > ul > li section {
-  display: flex;
+#projects > ul > li section {
+  /*display: flex;*/
 }
 
-#projects > div > ul > li .left {
-  margin-top: 7px;
-  margin-right: 50px;
+#projects > ul > li .left {
+  float: right;
+  margin: 5px 0 5px 20px;
   width: 300px;
   min-width: 300px;
 }
-#projects > div > ul > li .left p {
+#projects > ul > li .left p {
   text-align: center;
 }
-#projects > div > ul > li .desc {
-  box-sizing: content-box;
-  overflow: auto;
+#projects > ul > li .desc {
+  /*box-sizing: content-box;
+  overflow: auto;*/
   padding-left: 5px;
 }
-#projects > div > ul > li .desc h2 {
+#projects > ul > li .desc h2 {
   margin-top: 0;
   line-height: 1.2em;
 }
-#projects > div > ul > li .desc h2 svg {
+#projects > ul > li .desc h2 svg {
   position: relative;
   top: 4px;
 }
 
 
-#projects > div > ul > li .desc .maket {
+#projects > ul > li .desc .maket {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 
   margin: 16px 0;
 }
-#projects > div > ul > li .desc .maket img {
+#projects > ul > li .desc .maket img {
   min-width: 250px;
   max-width: 500px;
   margin: 5px;
   padding: 3px;
   outline: 1px solid darkgray;
 }
-#projects > div > ul > li .desc .maket img:hover {
+#projects > ul > li .desc .maket img:hover {
   /*outline: 1px solid #607d8b;*/
   box-shadow: 1px 1px 7px 0px darkgray;
   cursor: pointer;
 }
 
-#projects > div > ul > li summary {
+#projects > ul > li summary {
   display: inline-block;
   cursor: pointer;
 }
 
-#projects > div > ul > li ul {
+#projects > ul > li ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.fa-file-pdf-o:before {
-  margin-right: 5px;
-}
