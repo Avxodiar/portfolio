@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/r-normalize-min.v8.0.1-2.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/basis.css">
+  <link rel="stylesheet" href="/css/projects.css">
+</head>
+<body>
+  <div id="custom-content" class="white-popup-block">
+
+    <h1>Личный проект <nobr>интернет-аукцион «YetiCave»</nobr></h1>
+
+    <div class="left">
+      <time datetime="2020">2020</time>
+
+      <img class="default" src="/projects/yeticave/logo.png" width="300" height="194" alt="YetiCave">
+
+      <p>
+        <a class="magnific-iframe tooltip attr-tip" tooltip="PDF" href="/projects/yeticave/specification.pdf" target="_blank">
+          <i class="fa fa-file-pdf-o"></i>
+          Спецификация
+        </a>
+        <a class="magnific-iframe tooltip attr-tip" tooltip="PDF" href="/projects/yeticave/tz_detail.pdf" target="_blank">
+          <i class="fa fa-file-pdf-o"></i>
+          Детальное задание
+        </a>
+        <a class="tooltip attr-tip" tooltip="DOCX" href="/projects/yeticave/tz_yeticave.docx" download>
+          <i class="fa fa-file-word-o"></i>
+          Тех.задание
+        </a>
+        <a class="tooltip tip-source" href="https://github.com/Avxodiar/yeticave" target="_blank">
+          <i class="fa fa-github"></i>
+          Репозиторий
+        </a>
+      </p>
+    </div>
+
+    <div class="desc">
+      <p>
+        Выполнен в рамках интенсива
+        <i>HTML Academy «Профессиональный PHP, <nobr>уровень 1».</nobr></i>
+      </p>
+       
+      <p>Интернет-аукцион «YetiCave» – это простой сервис, позволяющий пользователям продать свои личные вещи по максимально выгодной для них цене - на основе аукциона. Пользователь, предложивший максимальную цену получает вещь по этой стоимости.</p>
+
+      <h4>Используемые технологии</h4>
+      <ul>
+        <li>PHP 7.2</li>
+        <li>MySQL 5.7</li>
+        <li>Git</li>
+        <li>Composer с автозагрузкой</li>
+        <li>пакет SwiftMailer для работы с почтой</li>
+        <li>процедурный стиль c паттерном "Page Controller"</li>
+      </ul>
+
+      <h4>Фреймворк:</h4>
+      <p>не используется - условие обучения</p>
+
+      <h4>Макет:</h4>
+      <p>готовый от HtmlAcademy, верстка не требуется</p>
+
+      <details>
+        <summary><i>Примечания</i>:</summary>
+        <ol>
+          <li>В соответствии с ТЗ п.6, в корне проекта находится файл queries.sql со схемой БД и примерами запросов на выборку/изменение данных. Более логичным в корне хранить только файл со схемой создания БД и ее структурой, а дополнительное описание с примерами запросов к БД вынести в отдельный файл. А еще правильнее было бы использовать инсталятор (install.php или Makefile), но это уже совсем другая история...</li>
+          <li>В соответствии с ТЗ п.9.2, в файле index.php подключается скрипт getwinner.php, занимающийся определением ставок у завершенных лотов и рассылкой писем победителям.<br>
+          Правильнее было бы данный скрипт повесить на крон и удалить его вызов в index.php.
+          </li>
+        </ol>
+      </details>
+  </div>
+
+  <!-- Magnific Popup core CSS file -->
+  <link href="/js/magnific-popup.css" rel="stylesheet">
+  <!-- Zepto.js 1.2+ -->
+  <script src="/js/zepto.min.js"></script>
+  <!-- Magnific Popup core JS file -->
+  <script src="/js/jquery.magnific-popup.min.js"></script>
+
+  <!-- Scrolling and init Magnific Popup -->
+  <script src="/js/magnific.js"></script>
+
+</body>
+</html>

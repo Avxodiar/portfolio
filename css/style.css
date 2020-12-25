@@ -359,18 +359,18 @@ main section {
   margin-bottom: 5em;
 }
 
-#skills {
+#about {
     position: relative;
 }
-#skills:before {
+#about:before {
     z-index:-1;
     position: absolute;
     right: 0;
-    top: 60%;
+    bottom: -4em;
     opacity:0.2;
     content: '';
-    width: 33%;
-    height: 33%;
+    width: 168px;
+    height: 116px;
     background-image: url(../img/laravel-old.svg);
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -401,14 +401,6 @@ main section {
 .external-link.no-underline {
   border-bottom: 1px solid var(--bg-color);
   text-decoration: none;
-}
-
-.qsoft-log li {
-  margin-bottom: 1em;
-}
-.qsoft-log time {
-  font-weight: 500;
-  display: block;
 }
 
 .list ul {
@@ -610,7 +602,7 @@ cursor: pointer;
 
 
 
-/*-- section projects -- */
+/*-- old styles sectiopn projects -- */
 
 #projects > ul > li {
   padding-top: 25px;
@@ -678,3 +670,211 @@ cursor: pointer;
   list-style: none;
 }
 
+
+/*-- new styles sectiopn projects -- */
+
+.grid {
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  padding: 1em 0;
+  max-width: 920px;
+  list-style: none;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Common style */
+.grid figure {
+  position: relative;
+  float: left;
+  /*overflow: hidden;*/
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 440px;
+  max-height: 360px;
+  width: 48%;
+  height: auto;
+  /*background: #3085a3;*/
+  text-align: center;
+}
+
+.grid figure img {
+  position: relative;
+  display: block;
+  box-sizing: content-box;
+  min-height: 100%;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  /*opacity: 0.8;*/
+  width: 440px;
+  height: 250px;
+  z-index: -1;
+}
+
+.grid figure figcaption {
+  padding: 1em 1em;
+  /*color: #fff;*/
+  text-transform: uppercase;
+  font-size: 1em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  /*z-index: 1000;*/
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.grid figure h4 {
+  /*word-spacing: -0.15em;
+  font-weight: 300;*/
+  /*display: inline;*/
+  position: relative;
+  /*padding: 0.1em 0.2em;*/
+  /*text-align: right;*/
+  /*color: #607D8B;*/
+  /*text-shadow: 2px 2px 3px #fff, -3px -2px 3px #fff, 2px -2px 3px #fff, -2px 2px 3px #fff;*/
+}
+/*
+.grid figure h2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 40%;
+}
+*/
+
+.grid figure h4 {
+  margin: 0;
+  margin-top: -2.5em;
+}
+
+figure.effect-kira {
+  /*background: #fff;*/
+  text-align: left;
+  margin-top: 2.5em;
+}
+
+figure.effect-kira img {
+  /*-webkit-transition: opacity 0.35s;*/
+  /*transition: opacity 0.35s;*/
+}
+
+figure.effect-kira figcaption {
+  /*z-index: 1;*/
+}
+
+figure.effect-kira .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1.5em 0.5em;
+  padding: 0.5em;
+  height: 95%;
+  font-weight: 600;
+  font-size: 100%;
+  line-height: 1.5;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-10px,0);
+  transform: translate3d(0,-10px,0);
+}
+
+figure.effect-kira .desc p {
+  margin: 0;
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+figure.effect-kira .desc .top {
+  font-size: 1em;
+}
+figure.effect-kira .desc .middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1em;
+}
+figure.effect-kira .desc .bottom {
+  color: darkslategrey;
+}
+
+figure.effect-kira .desc a {
+  display: inline-block;
+  padding: 0.5em;
+  color: var(--contact-github-hover);
+}
+
+figure.effect-kira .desc a:hover {
+  color: var(--contact-github);
+}
+
+figure.effect-kira .desc a i::before {
+  font-size: 2em;
+  color: var(--contact-github-hover);
+}
+
+figure.effect-kira .desc a:hover i::before ,
+figure.effect-kira .desc a:focus i::before {
+  color: var(--contact-github);
+}
+
+figure.effect-kira figcaption::before {
+  position: absolute;
+  top: -3.5em;
+  right: 1.5em;
+  left: 1.5em;
+  z-index: -1;
+  height: 80%;
+  /*background: #607D8B;*/
+  content: '';
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,4em,0) scale3d(1,0.023,1) ;
+  transform: translate3d(0,4em,0) scale3d(1,0.023,1);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+
+figure.effect-kira:hover img {
+  opacity: 0.5;
+}
+
+figure.effect-kira:hover .desc {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-kira:hover figcaption::before {
+  opacity: 0.7;
+  color: black;
+  background: white;
+  box-shadow: 0 0 0px 4px var(--dark-color);
+  -webkit-transform: translate3d(0,5em,0) scale3d(1,1,1) ;
+  transform: translate3d(0,5em,0) scale3d(1,1,1);
+}
