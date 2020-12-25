@@ -26,6 +26,12 @@ $(document).ready(function() {
     // галерея в popup окне
     let gallery = $('.popup-gallery');
         if (gallery.length) {
+
+        let designed = '';
+        if (gallery.attr('designed') == 'h-a') {
+            designed = '<small>designed by HTML Academy</small>';
+        }
+
         gallery.magnificPopup({
             delegate: 'a',
             type: 'image',
@@ -39,7 +45,7 @@ $(document).ready(function() {
             image: {
                 tError: '<a href="%url%">Изображение #%curr%</a> не может быть загружено.',
                 titleSrc: function(item) {
-                    return item.el.attr('title') + '<small>designed by HTML Academy</small>';
+                    return item.el.attr('title') + designed;
                 }
             }
         });
