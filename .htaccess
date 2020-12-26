@@ -1,0 +1,17 @@
+Options +FollowSymLinks -Indexes -ExecCGI -Includes
+DirectoryIndex index.html
+
+<ifModule mod_headers.c>
+    # 365 days
+    <filesMatch "\.(ico|svg|png|jpg|jpeg|gif|pdf|ttf|woff|woff2)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </filesMatch>
+    # 90 days
+    <filesMatch "\.(css|js)$">
+        Header set Cache-Control "max-age=7776000, public"
+    </filesMatch>
+    # 30 day
+    <filesMatch "\.(html|htm|xml|txt)$">
+        Header set Cache-Control "max-age=259200, private, must-revalidate"
+    </filesMatch>
+</ifModule>
