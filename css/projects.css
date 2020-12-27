@@ -13,6 +13,11 @@ h1 {
   border-bottom: 1px solid var(--light-gray);
 }
 
+h2 {
+  margin: 1.33em 0;
+  font-size: 1.2em;
+}
+
 .link {
   text-decoration: none;
   border-bottom: 1px dashed var(--contact-linkedin);
@@ -133,7 +138,8 @@ h1 {
   outline: 1px solid darkgray;
 }
 
-.left a {
+.left a,
+.left span {
   margin: 0 0.5em;
   display: block;
   vertical-align: middle;
@@ -143,7 +149,11 @@ h1 {
   text-align: left;
   text-decoration: none;
 }
-.left a i::before {
+.left span {
+  cursor: default;
+}
+.left a i::before,
+.left span i::before {
   position: relative;
   top: 0.1em;
   font-size: 1.3em;

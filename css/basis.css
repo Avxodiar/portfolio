@@ -190,11 +190,13 @@
   }
 }
 
-/* текст подсказок, пример:
-  <span tooltip="info">arger</span>
-*/
-.tooltip.attr-tip::after {
+/* Текст подсказок, в аттрибуте tooltip. Пример: <span tooltip="info">arger</span> */
+.tooltip.tip-attr::after {
   content: attr(tooltip);
+}
+/* Текст подсказок, в аттрибуте aria-label. Пример: <span aria-label="info">arger</span> */
+.tooltip.tip-aria::after {
+  content: attr(aria-label);
 }
 .tooltip.tip-source::after {
   content: 'Посмотреть исходники';
@@ -204,9 +206,6 @@
 }
 .tooltip.tip-sertificate::after {
   content: 'Посмотреть сертификат';
-}
-.tooltip.tip-orig::after {
-  content: 'Перейти к оригиналу';
 }
 .tooltip.tip-course::after {
   content: 'Перейти к списку курсов';
