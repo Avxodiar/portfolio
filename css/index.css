@@ -40,7 +40,6 @@ nav.main {
 nav.main ul {
   display: flex;
   justify-content: space-evenly;
-  padding: 0.5em 0;
   list-style: none;
 }
 nav.main a {
@@ -48,14 +47,13 @@ nav.main a {
   width: 9em;
   padding: 0.5em 1em;
   color: var(--nav-link);
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
 }
 nav.main .home a {
   width: 4em;
-  padding: 0;
 }
 nav.main .home .fa-home:before {
   font-size: 2em;
@@ -63,37 +61,21 @@ nav.main .home .fa-home:before {
   top: 0.1em;
   padding-bottom: 0.1em;
 }
-nav.main .home.active .fa-home:before {
-  border-bottom: 1px solid var(--nav-link);
-}
 
 
 nav.main a span {
-  padding: 0.5em 0;
+  padding: 0.7em 0;
 }
-nav.main a span:last-child {
-  display: none;
-}
-nav.main a span:last-child::before,
-nav.main a span:last-child::after {
-  position: absolute;
-}
-nav.main a span:last-child::before {
-  content: '{{ ';
-  margin-left: -1.5em;
-}
-nav.main a span:last-child::after {
-  content: ' }}';
-  margin-left: 0.5em;
-}
-
-nav.main .active span:first-child {
-  border-bottom: 1px solid var(--nav-link);
+nav.main .home a span {
+  padding: 0;
 }
 
 nav.main .active a,
 nav.main a:hover {
   color: var(--nav-main-link);
+}
+nav.main .home a {
+  color: var(--bg-color);
 }
 nav.main a:hover span:first-child {
   display: none;
@@ -103,6 +85,87 @@ nav.main a:hover span:last-child {
 }
 
 
+.block-menu {
+  display: block;
+}
+
+.block-menu li {
+  display: inline-block;
+}
+
+.block-menu li a {
+  display: block;
+  text-decoration: none;
+  overflow: visible;
+  line-height: 20px;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-align: center;
+  color: var(--bg-color);
+}
+
+.three-d {
+  perspective: 200px;
+  transition: all .07s linear;
+  position: relative;
+  cursor: pointer;
+}
+.three-d:hover .three-d-box,
+.three-d:focus .three-d-box {
+  transform: translateZ(-25px) rotateX(90deg);
+  }
+
+.three-d-box {
+  transition: all .3s ease-out;
+  transform: translatez(-25px);
+  transform-style: preserve-3d;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.front {
+  transform: rotatex(0deg) translatez(25px);
+}
+
+.back {
+  transform: rotatex(-90deg) translatez(25px);
+  color: var(--main-color);
+}
+
+.front, .back {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--bg-color);
+  padding: 15px 10px;
+  color: var(--main-color);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+a .front {
+  background: var(--bg-color);
+}
+a .back,
+.active a .front {
+  background: var(--nav-lightgray);
+}
+.active a .front,
+.active a .back {
+  color: var(--nav-link-active);
+}
+
+.back.fa-home::before {
+    color: var(--nav-link);
+}
 
 /* --- Шапка --- */
 

@@ -29,37 +29,53 @@
 
 <body id="home">
   <nav class="main">
-    <ul class="container">
+    <ul class="container block-menu">
       <li class="home active">
-        <a href="#home" aria-label="Главная">
-          <i class="fa fa-home" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li><a href="#about">
-        <span>Обо мне</span>
-        <span>$about</span></a>
-      </li>
-      <li>
-        <a href="#skills">
-          <span>Навыки</span>
-          <span>$skills</span>
+        <a href="#home" aria-label="Главная" class="three-d">Главная
+          <span aria-hidden="true" class="three-d-box">
+            <span class="front fa fa-home" aria-hidden="true"></span>
+            <span class="back fa fa-home" aria-hidden="true"></span>
+          </span>
         </a>
       </li>
       <li>
-        <a href="#projects">
-          <span>Проекты</span>
-          <span>$projects</span>
+        <a href="#about" class="three-d">Обо мне
+          <span aria-hidden="true" class="three-d-box">
+            <span class="front">Обо мне</span>
+            <span class="back">{{ $about }}</span>
+          </span>
         </a>
       </li>
       <li>
-        <a href="#expirience">
-          <span>Опыт</span>
-          <span>$expirience</span>
-        </a></li>
+        <a href="#skills" class="three-d">Навыки
+          <span aria-hidden="true" class="three-d-box">
+            <span class="front">Навыки</span>
+            <span class="back">{{ $skills }}</span>
+          </span>
+        </a>
+      </li>
       <li>
-        <a href="#education">
-          <span>Образование</span>
-          <span>$education</span>
+        <a href="#projects" class="three-d">Проекты
+          <span aria-hidden="true" class="three-d-box">
+            <span class="front">Проекты</span>
+            <span class="back">{{ $projects }}</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#expirience" class="three-d">Опыт
+          <span aria-hidden="true" class="three-d-box">
+            <span class="front">Опыт</span>
+            <span class="back">{{ $expirience }}</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#education" class="three-d">Образование
+          <span aria-hidden="true" class="three-d-box">
+            <span class="front">Образование</span>
+            <span class="back">{{ $education }}</span>
+          </span>
         </a>
       </li>
     </ul>
