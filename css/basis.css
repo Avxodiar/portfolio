@@ -94,6 +94,9 @@
 .d-flex {
   display: flex;
 }
+.d-wrap {
+  flex-wrap: wrap;
+}
 .f-align-center {
   align-items: center;
 }
