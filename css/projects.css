@@ -97,6 +97,10 @@ h2 {
   box-shadow: 0 0 0 8px #df0031, -4px 5px 5px 5px #6a2121;
   box-sizing: content-box;
 }
+.left img.center {
+  display: block;
+  margin: 0 auto;
+}
 
 .left p {
   text-align: center;
