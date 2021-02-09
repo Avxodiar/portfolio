@@ -1,85 +1,124 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Description" content="Учебный проект «Unique»">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Учебный проект по изученнию Vue.js">
 
-  <meta name="theme-color" content="#ffffff">
-  <link rel="icon" href="../../favicon.svg" sizes="any">
-  <link rel="icon" href="../../favicon16.png" sizes="16x16" type="image/png">
-  <link rel="icon" href="../../favicon32.png" sizes="32x32" type="image/png">
-  <link rel="mask-icon" href="../../img/favicon-safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="apple-touch-icon" href="../../img/favicon-apple-touch-icon.png" sizes="180x180">
-  <link rel="manifest" href="../../manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="../../favicon.svg" sizes="any">
+    <link rel="icon" href="../../favicon16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="../../favicon32.png" sizes="32x32" type="image/png">
+    <link rel="mask-icon" href="../../img/favicon-safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" href="../../img/favicon-apple-touch-icon.png" sizes="180x180">
+    <link rel="manifest" href="../../manifest.json">
 
-  <title>Учебный проект «Todo List»</title>
+    <title>Учебный проект по изученнию Vue.js</title>
 
-  <link rel="stylesheet preload prefetch" href="../../css/avx-normalize.css" as="style" crossorigin>
-  <link rel="stylesheet preload prefetch" href="../../css/basis.css" as="style" crossorigin>
-  <link rel="stylesheet preload prefetch" href="../../css/projects.css" as="style" crossorigin>
-  <link rel="stylesheet preload prefetch" href="../../css/font-awesome.min.css" as="style" crossorigin>
-  <link rel="preload" href="../../css/font-roboto/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../../css/font-roboto/KFOmCnqEu92Fr1Mu5mxKOzY.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../../css/font-roboto/KFOlCnqEu92Fr1MmWUlfBBc4.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../../css/font-roboto/KFOmCnqEu92Fr1Mu4mxK.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet preload prefetch" href="../../css/avx-normalize.css" as="style" crossorigin>
+    <link rel="stylesheet preload prefetch" href="../../css/basis.css" as="style" crossorigin>
+    <link rel="stylesheet preload prefetch" href="../../css/projects.css" as="style" crossorigin>
+    <link rel="stylesheet preload prefetch" href="../../css/font-awesome.min.css" as="style" crossorigin>
+    <link rel="preload" href="../../css/font-roboto/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2" as="font" type="font/woff2"
+          crossorigin>
+    <link rel="preload" href="../../css/font-roboto/KFOmCnqEu92Fr1Mu5mxKOzY.woff2" as="font" type="font/woff2"
+          crossorigin>
+    <link rel="preload" href="../../css/font-roboto/KFOlCnqEu92Fr1MmWUlfBBc4.woff2" as="font" type="font/woff2"
+          crossorigin>
+    <link rel="preload" href="../../css/font-roboto/KFOmCnqEu92Fr1Mu4mxK.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
-  <div id="custom-content" class="white-popup-block">
+<div id="custom-content" class="white-popup-block">
 
-    <h1>Учебный проект «Todo List»</h1>
+    <h1>Учебный проект по изученнию Vue.js</h1>
 
     <div class="left">
-      <time datetime="2020">2021</time>
-      <img class="center" src="logo.png" width="200" height="200" alt="Vue.js">
-      <p>
-        <a class="tooltip tip-source" href="https://github.com/Avxodiar/vuejs-learn" target="_blank" rel="nofollow noopener">
-          <i class="fa fa-github"></i>
-          Репозиторий
-        </a>
-        <a class="tooltip tip-site" href="https://avxodiar.github.io/vuejs-learn/" target="_blank" rel="nofollow noopener">
-          <i class="fa fa-external-link"></i>
-          Реализация
-        </a>
-      </p>
+        <time datetime="2020">2021</time>
+        <img class="center" src="logo.png" width="200" height="200" alt="Vue.js">
+        <p>
+            <a class="tooltip tip-source" href="https://github.com/Avxodiar/vuejs-learn" target="_blank"
+               rel="nofollow noopener">
+                <i class="fa fa-github"></i>
+                Репозиторий
+            </a>
+            <a class="tooltip tip-site" href="https://avxodiar.github.io/vuejs-learn/" target="_blank"
+               rel="nofollow noopener">
+                <i class="fa fa-external-link"></i>
+                Реализация
+            </a>
+        </p>
     </div>
 
     <div class="desc">
-      <p>Проект «Todo List» это учебный проект на Vue.js по созданию одностраничного сайта "Список дел".</p>
-      <p>Список дел хранится в браузерном хранилище LocalStorage,  позволяет добавлять и удалять задачи, менять порядок их расположения в списке, имеется возможность отмечать выполенные дела, а кроме того имеется поиск осуществляющий фильтрацию списка дел по совпадению введенной строки.</p>
+        <p>Проект содержит в себе 2 "подпроекта", реализованных с использованием компонентов и маршрутизации,
+            отображаемых на отдельных страницах.</p>
+        <ul>
+            <li>Список дел (Todo List)</li>
+            <li>Игра "Крестики-Нолики"</li>
+        </ul>
 
-      <h2>Используемые технологии</h2>
-      <ul>
-        <li>Vue.js, Vue Cli</li>
-        <li>Npm</li>
-        <li>Git</li>
-        <li>Html, Css, фиксированная верстка</li>
-      </ul>
+        <p>Приложение "Список дел" позволяет добавлять и удалять задачи, менять порядок их расположения в списке,
+            имеется возможность отмечать выполенные дела, а кроме того имеется поиск осуществляющий фильтрацию списка
+            дел по совпадению введенной строки. Данные хранятся в браузерном хранилище LocalStorage</p>
+        <p>
+            Приложение "Крестики-Нолики" это логическая игра между двумя противниками на квадратном поле 3 на 3 клетки.
+            Пользователь играет «крестиками», а компьютер — «ноликами». Игроки по очереди ставят на свободные клетки
+            поля 3х3 знаки (один всегда крестики, другой всегда нолики). Первый, выстроивший в ряд 3 своих фигуры по
+            вертикали, горизонтали или диагонали, выигрывает.
+        </p>
 
-      <h2>Скриншоты:</h2>
-      <ul class="popup-gallery">
-        <li>
-          <a href="vue-todo1.jpg" title="Список дел c 2мя отмеченными задачами">
-            Главная страница
-          </a>
-        </li>
-        <li>
-          <a href="vue-todo2.jpg" title="Пример поиска по запросу">
-            Раздел Портфолио
-          </a>
-        </li>
-      </ul>
-  </div>
+        <h2>Используемые технологии</h2>
+        <ul>
+            <li>Vue.js, Vue Cli</li>
+            <li>Npm</li>
+            <li>Git</li>
+            <li>Html, Css, фиксированная верстка</li>
+        </ul>
 
-  <!-- Magnific Popup core CSS file -->
-  <link href="../../js/magnific-popup.css" rel="stylesheet">
-  <!-- Zepto.js 1.2+ -->
-  <script src="../../js/zepto.min.js"></script>
-  <!-- Magnific Popup core JS file -->
-  <script src="../../js/jquery.magnific-popup.min.js"></script>
+        <h2>Скриншоты:</h2>
+        <ul class="popup-gallery">
+            <li>
+                <a href="todo1.jpg" title="Список дел. Общий вид">
+                    Список дел. Общий вид
+                </a>
+            </li>
+            <li>
+                <a href="todo2.jpg" title="Список дел. Пример поиска по запросу">
+                    Список дел. Пример поиска по запросу
+                </a>
+            </li>
+            <li>
+                <a href="todo3.jpg" title="Список дел. Фильтрация по статусу">
+                    Список дел. Фильтрация по статусу
+                </a>
+            </li>
+            <li>
+                <a href="game1.jpg" title="игра Крестики-Нолики. Победа на легком уровне сложности">
+                    игра "Крестики-Нолики". Победа на легком уровне сложности
+                </a>
+            </li>
+            <li>
+                <a href="game2.jpg" title=" игра Крестики-Нолики. Проигрыш на уровне сложности ЧакНоррис">
+                    игра "Крестики-Нолики". Проигрыш на уровне сложности ЧакНоррис
+                </a>
+            </li>
+            <li>
+                <a href="game3.jpg" title=" игра Крестики-Нолики. Ничья на уровне сложности ЧакНоррис">
+                игра "Крестики-Нолики". Ничья на уровне сложности ЧакНоррис
+                </a>
+            </li>
+        </ul>
+    </div>
 
-  <!-- Scrolling and init Magnific Popup -->
-  <script src="../../js/magnific.js"></script>
+    <!-- Magnific Popup core CSS file -->
+    <link href="../../js/magnific-popup.css" rel="stylesheet">
+    <!-- Zepto.js 1.2+ -->
+    <script src="../../js/zepto.min.js"></script>
+    <!-- Magnific Popup core JS file -->
+    <script src="../../js/jquery.magnific-popup.min.js"></script>
 
+    <!-- Scrolling and init Magnific Popup -->
+    <script src="../../js/magnific.js"></script>
+</div>
 </body>
 </html>
