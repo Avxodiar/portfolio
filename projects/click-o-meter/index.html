@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Тестовый проект «Click-O-Meter»">
+
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="../../favicon.svg" sizes="any">
+    <link rel="icon" href="../../favicon16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="../../favicon32.png" sizes="32x32" type="image/png">
+    <link rel="mask-icon" href="../../img/favicon-safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" href="../../img/favicon-apple-touch-icon.png" sizes="180x180">
+    <link rel="manifest" href="../../manifest.json">
+
+    <title>Тестовый проект «Click-O-Meter»</title>
+
+    <link rel="stylesheet preload prefetch" href="../../css/avx-normalize.css" as="style" crossorigin>
+    <link rel="stylesheet preload prefetch" href="../../css/basis.css" as="style" crossorigin>
+    <link rel="stylesheet preload prefetch" href="../../css/projects.css" as="style" crossorigin>
+    <link rel="stylesheet preload prefetch" href="../../css/font-awesome.min.css" as="style" crossorigin>
+    <link rel="preload" href="../../css/font-roboto/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2" as="font" type="font/woff2"
+          crossorigin>
+    <link rel="preload" href="../../css/font-roboto/KFOmCnqEu92Fr1Mu5mxKOzY.woff2" as="font" type="font/woff2"
+          crossorigin>
+    <link rel="preload" href="../../css/font-roboto/KFOlCnqEu92Fr1MmWUlfBBc4.woff2" as="font" type="font/woff2"
+          crossorigin>
+    <link rel="preload" href="../../css/font-roboto/KFOmCnqEu92Fr1Mu4mxK.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+<div id="custom-content" class="white-popup-block">
+
+    <h1>Тестовый проект «Click-O-Meter»</h1>
+
+    <div class="left">
+        <time datetime="2021">2021</time>
+
+        <img class="center" src="logo.png" width="200" height="254" alt="Click-O-Meter">
+
+        <p>
+            <a class="tooltip tip-source" href="https://github.com/Avxodiar/click-o-meter" target="_blank"
+               rel="nofollow noopener">
+                <i class="fa fa-github"></i>
+                Репозиторий
+            </a>
+        </p>
+    </div>
+
+    <div class="desc">
+        <p>Проект «Click-O-Meter» это тестовый проект на Laravel 5 по созданию простой системы веб-аналитики с картами
+            кликов.</p>
+        <p>Реализация состоит из 2ух компонентов:</p>
+        <ul>
+            <li>Js-скрипт, установленный на сторонние сайты, отслеживает клики пользователей: время и координаты.</li>
+            <li>Сайт-админка, на котором можно увидеть информацию для каждого мониторируемого сайта: карта кликов
+                (подобно Яндекс метрике) и график распределения активности пользователя по времени суток.
+            </li>
+        </ul>
+        <p>Скрипт встроенный на стороннем сайте отправляет данные на серверную часть проекта по API. Принимающая сторона
+            агрегирует данные в базу данных. Реализация проекта полностью на свое усмотрение.</p>
+
+        <h2>Используемые технологии</h2>
+        <ul>
+            <li>PHP 7.1</li>
+            <li>MySQL 5.7</li>
+            <li>Git</li>
+            <li>Composer</li>
+            <li>Npm</li>
+        </ul>
+
+        <h2>Фреймворк: Laravel 5.8</h2>
+
+        <h2>Библиотеки:</h2>
+        <ul>
+            <li>Bootstrap - основной шаблон и тестовые страницы</li>
+            <li>Chart.js - построение графиков на Canvas</li>
+            <li>Simpleheat - построения тепловых карт на Canvas</li>
+        </ul>
+
+        <details>
+            <summary><i>Примечание</i>:</summary>
+            <p>
+                В связи с тем, что проект является тестовом, функционал реализован в минимальном объеме. Визуализация данных выполняется по первому сайту который будет добавлен в БД.
+            </p>
+        </details>
+
+        <h2>Скриншоты:</h2>
+        <ul class="popup-gallery">
+            <li>
+                <a href="graph1.jpg"
+                   title="График распределения кликов по времени за последние сутки">
+                    График распределения кликов по времени за последние сутки
+                </a>
+            </li>
+            <li>
+                <a href="graph2.jpg"
+                   title="График распределения кликов по времени за последние сутки по одной выбранной ссылке">
+                    График распределения кликов по времени за последние сутки по одной выбранной ссылке
+                </a>
+            </li>
+            <li>
+                <a href="map1.jpg"
+                   title="График распределения кликов по времени за последние сутки">
+                    Тепловая карта распределения кликов
+                </a>
+            </li>
+            <li>
+                <a href="map2.jpg"
+                   title="График распределения кликов по времени за последние сутки">
+                    Тепловая карта распределения кликов, с максимальным радиусом отображения клика
+                </a>
+            </li>
+            <li>
+                <a href="map3.jpg"
+                   title="Тепловая карта распределения кликов, с максимальным радиусом и размытием при отображении клика">
+                    Тепловая карта распределения кликов, с максимальным радиусом и размытием при отображении клика
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Magnific Popup core CSS file -->
+<link href="../../js/magnific-popup.css" rel="stylesheet">
+<!-- Zepto.js 1.2+ -->
+<script src="../../js/zepto.min.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="../../js/jquery.magnific-popup.min.js"></script>
+
+<!-- Scrolling and init Magnific Popup -->
+<script src="../../js/magnific.js"></script>
+
+</body>
+</html>
